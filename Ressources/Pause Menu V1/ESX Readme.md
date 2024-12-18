@@ -13,7 +13,7 @@ The Custom Pause Menu Script is designed for FiveM servers to provide a highly c
 
 * [Join Our Discord](https://discord.gg/jgM5jW3rrN)
 * [Visit Our Tebex Store](https://0resmonclub.tebex.io)
-* [Donations](https://paypal.me/ablframework?country.x=FR\&locale.x=fr\_FR)
+* [Donations](https://paypal.me/ablframework?country.x=FR\&locale.x=fr_FR)
 
 ## Features
 
@@ -32,7 +32,7 @@ The Custom Pause Menu Script is designed for FiveM servers to provide a highly c
 ### Step-by-Step Installation
 
 1. **Download the Script**:
-   * Obtain the script files from the repository or source provided.
+   * Download the script from [https://keymaster.fivem.net](https://keymaster.fivem.net).
 2. **Place the Script in Server Directory**:
    *   Move the script files to your FiveM server’s resources directory. For example:
 

@@ -1,19 +1,24 @@
 ---
+icon: clipboard-question
 cover: ../../.gitbook/assets/0A8704FA-8499-4DE1-9192-14D4A6E56769.jpg
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: false
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
-# Minimap Styles
-
-### **Description 🔑**
-
-I am thrilled to present my new collection of minimap designs for FiveM. This package includes over 40 different designs, each crafted across 5 unique templates. Each style comes as a single script featuring custom pause menu colors and a matching background color to complement the minimap. Additionally, we offer custom map creation tailored to your ideas, with personalized zone names and colors.
-
-### **Useful Links 😊**
-
-* [Join Our Discord](https://discord.gg/jgM5jW3rrN)
-* [Visit Our Tebex Store](https://abdelemporium.tebex.io/)
-* [Donations](https://paypal.me/ablframework?country.x=FR\&locale.x=fr\_FR)
+# Overview
 
 ### **Installation / Information 📖**
 
@@ -113,3 +118,9 @@ Config.Options = {
 }
 
 ```
+
+### **Useful Links 😊**
+
+* [Join Our Discord](https://discord.gg/jgM5jW3rrN)
+* [Visit Our Tebex Store](https://abdelemporium.tebex.io/)
+* [Donations](https://paypal.me/ablframework?country.x=FR\&locale.x=fr_FR)
