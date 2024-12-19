@@ -32,7 +32,6 @@ layout:
 * Press `CTRL + SHIFT + F` to search for the following lines:
   * `SetMapZoomDataLevel`
   * `SetRadarZoom`
-  * `SetRadarAsInteriorThisFrame` " remove this one only if you have specific problems with the map "
 
 {% hint style="warning" %}
 Remove these lines if found, **but do not remove them from the new script!**

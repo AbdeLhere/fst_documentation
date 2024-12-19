@@ -36,7 +36,7 @@ If you dont have the Cayo Perico IPL you can download it from [<mark style="colo
 {% endhint %}
 
 {% hint style="warning" %}
-After installing <mark style="color:yellow;">ipls\_resource set</mark> `using_ipl_loader = true`
+After installing <mark style="color:yellow;">ipls\_resource</mark> set `using_ipl_loader = true`
 {% endhint %}
 
 ***
@@ -47,3 +47,5 @@ After installing <mark style="color:yellow;">ipls\_resource set</mark> `using_ip
         using_ipl_loader = false, -- If you are using an IPL RESOURCE set this true (example: https://forum.cfx.re/t/the-cayo-perico-island-available-for-fivem/1897446?page=38)
     },
 ```
+
+***
