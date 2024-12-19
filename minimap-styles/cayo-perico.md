@@ -17,6 +17,20 @@ layout:
 
 **To enable Cayo Perico Minimap set `enable_cayo_minimap = true`.**
 
+## <mark style="color:green;">Installation</mark>
+
+1. Maps Source [<mark style="color:yellow;">**CLICKME**</mark>](https://github.com/AbdeLhere/Cayo-Maps)<mark style="color:yellow;">**.**</mark>&#x20;
+2. Choose your style:&#x20;
+   * <mark style="color:yellow;">**Example**</mark> : I have **abl-minimap-part1-OP**. So to install the **grey Cayo Perico minimap with green zone names**, follow these steps
+3. Download your style:
+   * Download the **Cayo-Maps** `Folder` from <mark style="color:yellow;">**GitHub**</mark>.
+4. Drag and drop your style:
+   * Move the file `Cayo-Maps/Grey with text/grey-green/int3232302352.gfx` to the folder `abl-minimap-part1-OP/stream/gfx`.
+5. Finish
+   * Restart the script (it’s recommended to restart the server) to complete the setup.
+
+## <mark style="color:green;">Configuration</mark>
+
 {% hint style="info" %}
 `enable_cayo_minimap`  will just enable the cayo minimap not the map IPL\
 \
@@ -36,7 +50,7 @@ If you dont have the Cayo Perico IPL you can download it from [<mark style="colo
 {% endhint %}
 
 {% hint style="warning" %}
-After installing <mark style="color:yellow;">ipls\_resource</mark> set `using_ipl_loader = true`
+After installing [<mark style="color:yellow;">ipls\_resource</mark>](https://forum.cfx.re/t/the-cayo-perico-island-available-for-fivem/1897446) set `using_ipl_loader = true`
 {% endhint %}
 
 ***
