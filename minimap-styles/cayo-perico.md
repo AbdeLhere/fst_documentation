@@ -18,9 +18,9 @@ layout:
 **To enable Cayo Perico Minimap set `enable_cayo_minimap = true`.**
 
 {% hint style="info" %}
-`enable_cayo_minimap`  will just enable the cayo minimap not the map ipl\
+`enable_cayo_minimap`  will just enable the cayo minimap not the map IPL\
 \
-<mark style="color:yellow;">Example :</mark>
+<mark style="color:yellow;">**Example :**</mark>
 
 ***
 
@@ -31,9 +31,15 @@ layout:
 ***
 {% endhint %}
 
-***
+{% hint style="success" %}
+If you dont have the Cayo Perico IPL you can download it from [<mark style="color:yellow;">**HERE**</mark>](https://forum.cfx.re/t/the-cayo-perico-island-available-for-fivem/1897446)
+{% endhint %}
 
-&#x20;
+{% hint style="warning" %}
+After installing <mark style="color:yellow;">ipls\_resource set</mark> `using_ipl_loader = true`
+{% endhint %}
+
+***
 
 ```lua
   cayoPerico = {

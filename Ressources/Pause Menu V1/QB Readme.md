@@ -31,65 +31,65 @@ The Custom Pause Menu Script is designed for FiveM servers to provide a highly c
 
 ### Step-by-Step Installation
 
-1. **Download the Script**:
-   * Download the script from [https://keymaster.fivem.net](https://keymaster.fivem.net).
-2. **Place the Script in Server Directory**:
-   *   Move the script files to your FiveM server’s resources directory. For example:
+* [ ] <mark style="color:yellow;">**Download the Script**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">:</mark>
+  * Download the script from [https://keymaster.fivem.net](https://keymaster.fivem.net).
+* [ ] <mark style="color:yellow;">**Place the Script in Server Directory**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">:</mark>
+  *   Move the script files to your FiveM server’s resources directory. For example:
 
-       ```plaintext
-       resources/[your_resource_folder]/abl-pausemenu-qb/
-       ```
-3. **Add to Server CFG**:
-   * Open your `server.cfg` file.
-   *   Add the following line to ensure the script is loaded and started:
+      ```plaintext
+      resources/[your_resource_folder]/abl-pausemenu-qb/
+      ```
+* [ ] <mark style="color:yellow;">**Add to Server CFG**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">:</mark>
+  * Open your `server.cfg` file.
+  *   Add the following line to ensure the script is loaded and started:
 
-       ```plaintext
-       ensure abl-pausemenu-qb
-       ```
-4.  **Add Map Item ( Optional )**:
+      ```plaintext
+      ensure abl-pausemenu-qb
+      ```
+* [ ] <mark style="color:yellow;">**Add Map Item ( Optional )**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">:</mark>
 
-    * ( esx legacy )
+{% tabs %}
+{% tab title="OLD QB" %}
+<pre class="language-lua"><code class="lang-lua"><strong>['maptablet'] = {
+</strong>  ['name'] = 'maptablet',
+  ['label'] = 'Map Tablet',
+  ['weight'] = 1000,
+  ['type'] = 'item',
+  ['image'] = 'maptablet.png',
+  ['unique'] = false,
+  ['useable'] = true,
+  ['shouldClose'] = true,
+  ['combinable'] = nil,
+  ['description'] = 'A tablet with map functionality' },
+</code></pre>
+{% endtab %}
 
-    ```sql
-    INSERT INTO items (name, label, weight) VALUES ('maptablet', 'Map Tablet', 1); 
-    ```
+{% tab title="NEW QB" %}
+```lua
+  maptablet = { name = 'maptablet', label = 'Map Tablet', weight = 1000, type = 'item', image = 'maptablet.png', unique = false, useable = true, shouldClose = true, description = 'A tablet with map functionality' },
+```
+{% endtab %}
 
-    * ( old qb )
+{% tab title="ESX LEGACY" %}
+```lua
+INSERT INTO items (name, label, weight) VALUES ('maptablet', 'Map Tablet', 1); 
+```
+{% endtab %}
 
-    ```lua
+{% tab title="OX INVENTORY" %}
+```lua
+  ['maptablet'] = {
+    label = 'Map Tablet',
+    description = "A tablet with map functionality",
+    weight = 30,
+    stack = false
+  },
+```
+{% endtab %}
+{% endtabs %}
 
-    ['maptablet'] = {
-      ['name'] = 'maptablet',
-      ['label'] = 'Map Tablet',
-      ['weight'] = 1000,
-      ['type'] = 'item',
-      ['image'] = 'maptablet.png',
-      ['unique'] = false,
-      ['useable'] = true,
-      ['shouldClose'] = true,
-      ['combinable'] = nil,
-      ['description'] = 'A tablet with map functionality' },
-    ```
-
-    * ( new qb )
-
-    ```lua
-      maptablet = { name = 'maptablet', label = 'Map Tablet', weight = 1000, type = 'item', image = 'maptablet.png', unique = false, useable = true, shouldClose = true, description = 'A tablet with map functionality' },
-       
-    ```
-
-    \- ( ox inventory)
-
-    ```lua
-      ['maptablet'] = {
-        label = 'Map Tablet',
-        description = "A tablet with map functionality",
-        weight = 30,
-        stack = false
-      },
-    ```
-5. **Restart the Server**:
-   * Restart your FiveM server to apply the changes.
+* [ ] <mark style="color:yellow;">**Restart the Server**</mark><mark style="color:yellow;">:</mark>
+  * Restart your FiveM server to apply the changes.
 
 ## Configuration
 
