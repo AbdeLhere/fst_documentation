@@ -15,7 +15,9 @@ layout:
 
 # Cayo Perico
 
+{% hint style="warning" %}
 **To enable Cayo Perico Minimap set `enable_cayo_minimap = true`.**
+{% endhint %}
 
 ## <mark style="color:green;">Installation</mark>
 
