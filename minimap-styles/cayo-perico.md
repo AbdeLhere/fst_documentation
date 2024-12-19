@@ -19,14 +19,13 @@ layout:
 
 ## <mark style="color:green;">Installation</mark>
 
-1. Maps Source [<mark style="color:yellow;">**CLICKME**</mark>](https://github.com/AbdeLhere/Cayo-Maps)<mark style="color:yellow;">**.**</mark>&#x20;
-2. Choose your style:&#x20;
+1. Choose your style:&#x20;
    * <mark style="color:yellow;">**Example**</mark> : I have **abl-minimap-part1-OP**. So to install the **grey Cayo Perico minimap with green zone names**, follow these steps
-3. Download your style:
+2. Download your style:
    * Download the **Cayo-Maps** `Folder` from <mark style="color:yellow;">**GitHub**</mark>.
-4. Drag and drop your style:
+3. Drag and drop your style:
    * Move the file `Cayo-Maps/Grey with text/grey-green/int3232302352.gfx` to the folder `abl-minimap-part1-OP/stream/gfx`.
-5. Finish
+4. Finish
    * Restart the script (it’s recommended to restart the server) to complete the setup.
 
 ## <mark style="color:green;">Configuration</mark>
@@ -39,7 +38,7 @@ layout:
 ***
 
 \
-![](<../.gitbook/assets/image (2).png>)\
+![](<../.gitbook/assets/image (2) (1).png>)\
 
 
 ***
