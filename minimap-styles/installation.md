@@ -20,11 +20,11 @@ layout:
 
 # Installation
 
-## <mark style="color:yellow;">**Step 1: Remove Old Minimap Script**</mark>
+## <mark style="color:yellow;">**Remove Old Minimap Script**</mark>
 
 * Remove any old minimap script from your resources.
 
-## <mark style="color:yellow;">**Step 2: Cleanup**</mark>&#x20;
+## <mark style="color:yellow;">**Cleanup**</mark>&#x20;
 
 * Open **Visual Studio Code**.
 * Press `CTRL + K + O` to open a folder.
@@ -37,7 +37,7 @@ layout:
 Remove these lines if found, **but do not remove them from the new script!**
 {% endhint %}
 
-## <mark style="color:yellow;">**Step 3: Ensuring the New Script**</mark>
+## <mark style="color:yellow;">**Ensuring**</mark>&#x20;
 
 * Drag and drop the new resource into your resources folder.
 * Open your `server.cfg` file and add the following line after your framework, replacing `"script-name"` with your actual script name (e.g., `abl-minimap-X8-OP`):
@@ -50,7 +50,7 @@ Remove these lines if found, **but do not remove them from the new script!**
 
 * Restart your server.
 
-## <mark style="color:yellow;">**Step 4: Configuration**</mark>
+## <mark style="color:yellow;">**Configuration**</mark>
 
 * You can adjust the background opacity in `Config.Options.opacity` (Max: 200, Min: 0).
 * Pause Menu colors can be edited in `Config.Options.RedGreenBlueAlpha`. You can use the [RGBA Color Picker](https://rgbacolorpicker.com/) to choose your preferred colors.
