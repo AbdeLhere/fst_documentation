@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/0A8704FA-8499-4DE1-9192-14D4A6E56769.jpg
+cover: ../.gitbook/assets/23152C76-AD36-461C-AAB6-B5F466D7142D.jpg
 coverY: 0
 layout:
   cover:
@@ -17,5 +17,5 @@ layout:
     visible: true
 ---
 
-# Minimap Styles
+# Emergency Minimap Style
 
