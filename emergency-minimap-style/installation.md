@@ -58,16 +58,16 @@ I**f you want to use Cayo Bridge or Roxwood County styles, follow this guide.**
 
 #### <mark style="color:yellow;">How to Change the Default Map</mark>
 
-The default map used is **abl-emap-t1**. However, you can easily switch to a different map by replacing the contents of the **abl-emergencymap/stream** folder with the files from a new map.
+The default map used is **abl-emap-t1**. However, you can easily switch to a different map by replacing the contents of the **abl-emergencymap/stream/ytd** folder with the files from a new map.
 
 **Example: Switching to the Los Santos + Cayo Perico Map (Without Zone Names)**
 
 1. **Locate the Default Map:**
-   * Go to the `abl-emergencymap/stream` folder in your current installation.
+   * Go to the `abl-emergencymap/stream/ytd` folder in your current installation.
 2. **Select Your Desired Map:**
-   * Navigate to the **abl-emergencymap/INSTALLATION/Other Styles/abl-emap-t2/stream** folder (this is the folder that contains the Los Santos + Cayo Perico map without zone names).
+   * Navigate to the **abl-emergencymap/INSTALLATION/Other Styles/abl-emap-t2/ytd** folder (this is the folder that contains the Los Santos + Cayo Perico map without zone names).
 3. **Replace the Files:**
-   * Drag and drop all the contents from the **abl-emap-t2/stream** folder into the **abl-emap-t1/stream** folder, and when prompted, **replace the existing files**.
+   * Drag and drop all the contents from the **abl-emap-t2/ytd** folder into the **abl-emap-t1/stream/ytd** folder, and when prompted, **replace the existing files**.
 
 ***
 
