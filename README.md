@@ -12,10 +12,10 @@ coverY: 0
 >
 > If you need help or want to chat, you can reach me here:
 >
-> Discord Ticket : https://discord.com/channels/1189624911434625074/1231290818879553567 GitHub: [github.com/AbdeLhere](https://github.com/AbdeLhere) Discord DMs: `abdel4999`
+> Discord : [https://discord.gg/Y3qsvdce86](https://discord.gg/Y3qsvdce86)\
+> GitHub: [github.com/AbdeLhere](https://github.com/AbdeLhere)\
+> Discord DMs: `abdel4999`
 >
 > Thanks for stopping by and supporting FrostByte Studios!
-
-{% embed url="https://www.youtube.com/@AbdelEmporium" %}
 
 {% embed url="https://www.paypal.com/paypalme/ablframework?country.x=FR&locale.x=fr_FR" %}
