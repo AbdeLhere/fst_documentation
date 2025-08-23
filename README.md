@@ -1,6 +1,6 @@
 ---
 icon: web-awesome
-cover: .gitbook/assets/7E7DB7A7-5C72-4707-B521-E0EB31ACF2A1.jpg
+cover: .gitbook/assets/youtube_banner.png
 coverY: 0
 ---
 

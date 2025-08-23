@@ -2,20 +2,6 @@
 icon: circle-exclamation
 cover: ../.gitbook/assets/0A8704FA-8499-4DE1-9192-14D4A6E56769.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Common Problems

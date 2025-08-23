@@ -23,3 +23,10 @@
 * [Pause Menu V1](pause-menu-v1/README.md)
   * [ESX Readme](<Ressources/Pause Menu V1/ESX Readme.md>)
   * [QB Readme](<Ressources/Pause Menu V1/QB Readme.md>)
+
+## UI & HUD Enhancements
+
+* [fst-enhanced-minimap](ui-and-hud-enhancements/fst-enhanced-minimap.md)
+* [fst-pause-menu](ui-and-hud-enhancements/fst-pause-menu.md)
+* [fst-emergency-minimap](ui-and-hud-enhancements/fst-emergency-minimap.md)
+* [fst-minimaps-v3](ui-and-hud-enhancements/fst-minimaps-v3.md)
