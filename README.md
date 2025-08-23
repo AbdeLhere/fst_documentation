@@ -8,24 +8,14 @@ coverY: 0
 
 ***
 
-Welcome to the official documentation for AbdelEmporium, your ultimate source for premium FiveM scripts. This guide is designed to help you seamlessly integrate and customize our scripts to enhance your FiveM server experience.
-
-Within this documentation, you'll find:
-
-* **Installation Guides**: Step-by-step instructions to help you set up each script with ease.
-* **Configuration Tips**: Detailed explanations on how to customize scripts to suit your server's unique needs.
-* **Feature Overviews**: A breakdown of the powerful features and functionalities included in each script.
-* **Troubleshooting**: Solutions to common issues, ensuring a smooth experience for all users.
-* **Updates & Changelog**: Stay informed about the latest enhancements and fixes.
-
-Whether you're an experienced developer or new to FiveM, AbdelEmporium's documentation is here to support you at every step. Dive in and unlock the full potential of your FiveM server with our carefully crafted scripts!
-
-***
+> Hi! I’m **Abdelhamid** from Morocco. I started **FrostByte Studios** (formerly AbdelEmporium) on **September 29, 2024** to share the FiveM scripts and creative projects I build. I focus on making things that are simple, useful, and fun for game servers.
+>
+> If you need help or want to chat, you can reach me here:
+>
+> Discord Ticket : https://discord.com/channels/1189624911434625074/1231290818879553567 GitHub: [github.com/AbdeLhere](https://github.com/AbdeLhere) Discord DMs: `abdel4999`
+>
+> Thanks for stopping by and supporting FrostByte Studios!
 
 {% embed url="https://www.youtube.com/@AbdelEmporium" %}
-
-{% embed url="https://abdelemporium.tebex.io" %}
-
-{% embed url="https://discord.gg/vVUxCXjd46" %}
 
 {% embed url="https://www.paypal.com/paypalme/ablframework?country.x=FR&locale.x=fr_FR" %}
