@@ -2,23 +2,9 @@
 icon: web-awesome
 cover: .gitbook/assets/7E7DB7A7-5C72-4707-B521-E0EB31ACF2A1.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# AbdelEmporium Documentation
+# FrostByte Studios
 
 ***
 

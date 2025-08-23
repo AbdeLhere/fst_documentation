@@ -1,6 +1,15 @@
 # Table of contents
 
-* [AbdelEmporium Documentation](README.md)
+* [FrostByte Studios](README.md)
+
+## Getting Started
+
+* [Privacy Policy](getting-started/privacy-policy.md)
+* [Terms of Service](getting-started/terms-of-service.md)
+* [CFX Escrow System](getting-started/cfx-escrow-system.md)
+
+***
+
 * [Minimap Styles](minimap-styles/README.md)
   * [Overview](<Ressources/Minimap Styles/Minimap Styles.md>)
   * [Installation](minimap-styles/installation.md)
