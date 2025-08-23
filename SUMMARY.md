@@ -16,10 +16,6 @@
   * [Config.lua](minimap-styles/config.lua.md)
   * [Cayo Perico](minimap-styles/cayo-perico.md)
   * [Common Problems](minimap-styles/common-problems.md)
-* [Emergency Minimap Style](emergency-minimap-style/README.md)
-  * [Overview](emergency-minimap-style/minimap-styles.md)
-  * [Installation](emergency-minimap-style/installation.md)
-  * [Config.lua](emergency-minimap-style/config.lua.md)
 * [Pause Menu V1](pause-menu-v1/README.md)
   * [ESX Readme](<Ressources/Pause Menu V1/ESX Readme.md>)
   * [QB Readme](<Ressources/Pause Menu V1/QB Readme.md>)
@@ -28,5 +24,6 @@
 
 * [fst-enhanced-minimap](ui-and-hud-enhancements/fst-enhanced-minimap.md)
 * [fst-pause-menu](ui-and-hud-enhancements/fst-pause-menu.md)
-* [fst-emergency-minimap](ui-and-hud-enhancements/fst-emergency-minimap.md)
+* [fst-emergency-minimap](ui-and-hud-enhancements/fst-emergency-minimap/README.md)
+  * [Installation](ui-and-hud-enhancements/fst-emergency-minimap/installation.md)
 * [fst-minimaps-v3](ui-and-hud-enhancements/fst-minimaps-v3.md)
