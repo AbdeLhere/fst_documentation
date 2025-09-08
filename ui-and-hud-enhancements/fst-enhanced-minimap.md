@@ -57,7 +57,14 @@ Follow these steps to install the FST Enhanced Minimap on your FiveM server.
 1. Download the script and place it in your server's `resources` folder.
 2. Ensure the folder is named `fst_enhanced_minimap`.
 
-#### Step 2: Add to Server CFG
+#### Step 2: Install Dependencies
+
+Ensure the following dependencies are installed:
+
+* [ox\_lib](https://github.com/CommunityOx/ox_lib)
+* [mnr\_postals](https://github.com/AbdeLhere/mnr_postals)
+
+#### Step 3: Ensure
 
 Add the following line to your `server.cfg` if needed:
 
@@ -66,13 +73,6 @@ ensure ox_lib
 ensure mnr_postals 
 ensure fst_enhanced_minimap
 ```
-
-#### Step 3: Install Dependencies
-
-Ensure the following dependencies are installed:
-
-* [ox\_lib](https://github.com/CommunityOx/ox_lib)
-* [mnr\_postals](https://github.com/AbdeLhere/mnr_postals)
 
 #### Step 4: Optional - Install Themes
 
