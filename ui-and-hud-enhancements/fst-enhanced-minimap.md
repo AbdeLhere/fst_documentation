@@ -21,30 +21,30 @@ The **FST Enhanced Minimap** is not just a minimap, it's a fully customizable an
 
 ### **Features**
 
-* **Tablet UI** A modern, interactive tablet interface to manage your minimap.
-* **Overlay Management**:
+* <mark style="color:$success;">**Tablet UI**</mark> A modern, interactive tablet interface to manage your minimap.
+* <mark style="color:$success;">**Overlay Management**</mark>:
   * Enable/disable overlays like:
-    * Zone Names (9+ styles)
-    * Rural Routes (+2 styles)
-    * Urban Routes (+2 styles)
-    * Interstate Highways (+2 styles)
+    * <mark style="color:$success;">Zone Names (9+ styles)</mark>
+    * <mark style="color:$success;">Rural Routes (+2 styles)</mark>
+    * <mark style="color:$success;">Urban Routes (+2 styles)</mark>
+    * <mark style="color:$success;">Interstate Highways (+2 styles)</mark>
   * More overlays coming soon!
-* **Emergency Zones**:
+* <mark style="color:$success;">**Emergency Zones**</mark>:
   * Whitelisted jobs (e.g., BCSO, DPPD, LSPD, LSSD, MCSO, NOOSE, RHPD, SASPA, USAF) can enable zones on the minimap.
   * Configurable to allow anyone to toggle zones.
-* **Pause Menu Customization**:
+* <mark style="color:$success;">**Pause Menu Customization**</mark>:
   * Change background colors, waypoint colors, and text highlights in real-time.
-* **Postal System**:
+* <mark style="color:$success;">**Postal System**</mark>:
   * Search by postal code.
   * View your current postal.
   * Click anywhere on the map to find its postal.
-* **Special Maps**:
+* <mark style="color:$success;">**Special Maps**</mark>:
   * Enable maps like Roxwood, Cayo Perico, and Cayo Bridge (v1 or v2).
-* **Theme Customization**:
+* <mark style="color:$success;">**Theme Customization**</mark>:
   * Change themes for Los Santos and special maps.
-  * Download themes from the [fst\_minimap\_themes GitHub repository](https://github.com/AbdeLhere/fst-minimap-themes).
-* **Sound Effects**: Custom sound effects when opening the map.
-* **Framework Compatibility**: Works with QBX, QB-Core, and ESX frameworks.
+  * Download themes from the [fst\_minimap\_themes GitHub repository](https://github.com/AbdeLhere/fst_minimap_themes).
+* <mark style="color:$success;">**Sound Effects**</mark>: Custom sound effects when opening the map.
+* <mark style="color:$success;">**Framework Compatibility**</mark>: Works with QBX, QB-Core, and ESX frameworks.
 
 ***
 
