@@ -194,3 +194,14 @@ return {
 }
 ```
 {% endcode %}
+
+### Exports
+
+```lua
+exports['fst-enhanced-minimap']:openTablet()
+```
+
+```lua
+exports['fst-enhanced-minimap']:closeTablet()
+```
+
