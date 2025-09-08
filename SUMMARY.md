@@ -8,22 +8,14 @@
 * [Terms of Service](getting-started/terms-of-service.md)
 * [CFX Escrow System](getting-started/cfx-escrow-system.md)
 
-***
-
-* [Minimap Styles](minimap-styles/README.md)
-  * [Overview](<Ressources/Minimap Styles/Minimap Styles.md>)
-  * [Installation](minimap-styles/installation.md)
-  * [Config.lua](minimap-styles/config.lua.md)
-  * [Cayo Perico](minimap-styles/cayo-perico.md)
-  * [Common Problems](minimap-styles/common-problems.md)
-* [Pause Menu V1](pause-menu-v1/README.md)
-  * [ESX Readme](<Ressources/Pause Menu V1/ESX Readme.md>)
-  * [QB Readme](<Ressources/Pause Menu V1/QB Readme.md>)
-
 ## UI & HUD Enhancements
 
 * [fst-enhanced-minimap](ui-and-hud-enhancements/fst-enhanced-minimap.md)
-* [fst-pause-menu](ui-and-hud-enhancements/fst-pause-menu.md)
+* [fst-pause-menu](ui-and-hud-enhancements/fst-pause-menu/README.md)
+  * [QB Readme](ui-and-hud-enhancements/fst-pause-menu/qb-readme.md)
+  * [ESX Readme](ui-and-hud-enhancements/fst-pause-menu/esx-readme.md)
 * [fst-emergency-minimap](ui-and-hud-enhancements/fst-emergency-minimap/README.md)
   * [Installation](ui-and-hud-enhancements/fst-emergency-minimap/installation.md)
-* [fst-minimaps-v3](ui-and-hud-enhancements/fst-minimaps-v3.md)
+* [fst-minimaps-v3](ui-and-hud-enhancements/fst-minimaps-v3/README.md)
+  * [Installation](ui-and-hud-enhancements/fst-minimaps-v3/installation.md)
+  * [Common Problems](ui-and-hud-enhancements/fst-minimaps-v3/common-problems.md)
