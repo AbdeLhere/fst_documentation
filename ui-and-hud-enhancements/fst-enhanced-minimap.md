@@ -198,10 +198,10 @@ return {
 ### Exports
 
 ```lua
-exports['fst-enhanced-minimap']:openTablet()
+exports.fst_enhanced_minimap:openTablet()
 ```
 
 ```lua
-exports['fst-enhanced-minimap']:closeTablet()
+exports.fst_enhanced_minimap:closeTablet()
 ```
 
