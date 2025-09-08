@@ -34,7 +34,7 @@ The **FST Enhanced Minimap** is not just a minimap, it's a fully customizable an
   * Configurable to allow anyone to toggle zones.
 * <mark style="color:$success;">**Pause Menu Customization**</mark>:
   * Change background colors, waypoint colors, and text highlights in real-time.
-* <mark style="color:$success;">**Postal System**</mark>:
+* <mark style="color:$success;">**Postal System**</mark>: needs `mnr_postals` [my edited version](https://github.com/AbdeLhere/mnr_postals)
   * Search by postal code.
   * View your current postal.
   * Click anywhere on the map to find its postal.
