@@ -242,6 +242,78 @@ return {
 ```
 {% endcode %}
 
+### FAQ
+
+#### <mark style="color:yellow;">I have a custom map like Roxwood. Is it supported?</mark>
+
+Yes. Custom maps are fully supported. The config already includes premade entries for maps like **Roxwood**, **Cayo Perico**, and **Cayo Bridge (v1/v2)**.\
+You can also add your own map by editing the `SpecialTiles` section in the config.
+
+Need help? Contact me and I’ll assist you with adding it.
+
+***
+
+#### <mark style="color:yellow;">Why is my minimap pulsing or flickering?</mark>
+
+This usually happens when two scripts are trying to control minimap zoom levels at the same time.\
+To fix this issue, set the following in your config:
+
+```lua
+using_affected_hud = true
+```
+
+***
+
+#### <mark style="color:yellow;">How can I change the theme of the map?</mark>
+
+You can download themes that support special maps like Roxwood from this repository:\
+[https://github.com/AbdeLhere/fst\_minimap\_themes](https://github.com/AbdeLhere/fst_minimap_themes)
+
+Replace the contents of the `stream/base` folder with your desired theme.\
+If you already have your own minimap, it's recommended to use one without zone names or postal overlays, then replace the textures in `stream/base`.
+
+***
+
+#### <mark style="color:yellow;">Do you accept custom maps?</mark>
+
+Yes. Custom maps are accepted.\
+Open a ticket on the Discord server: [https://discord.gg/DQDsp5ehvJ](https://discord.gg/DQDsp5ehvJ)\
+Or contact me directly on Discord: `abdel4999`
+
+***
+
+#### <mark style="color:yellow;">Can I edit the department zones?</mark>
+
+Yes. Department zones are overlays (textures) like any other.\
+You will need tools like **Photoshop** and **OpenIV** to edit them.\
+If you're not comfortable doing it yourself, you can request custom work.
+
+***
+
+#### <mark style="color:yellow;">Can I disable overlays or departments?</mark>
+
+Yes. You can enable or disable any overlay or department at any time in the `config.lua`.\
+Just set `enabled = false` for anything you don't want active.
+
+***
+
+#### <mark style="color:yellow;">I don’t like the tablet UI. Can I use something else?</mark>
+
+Yes. You can use the ox\_lib UI instead by setting the following in your config:
+
+```lua
+ui_type = 'oxlib'
+```
+
+Options: `'tablet'` or `'oxlib'`
+
+***
+
+#### <mark style="color:yellow;">Are you adding more overlays in the future?</mark>
+
+Yes. More overlays are planned.\
+Suggestions are welcome, feel free to contact me or open a ticket.
+
 ### Exports
 
 ```lua
