@@ -89,16 +89,24 @@ return {
   debug = false,
 
   Framework = {
-    -- 'esx' | 'qb' | 'qbx'
-    type = 'qbx',
+    -- 'esx' | 'qb' | 'qbx' | 'standalone'
+    type = 'standalone',
+  },
+
+  Fallbacks = {
+    playername = 'hey its me',    -- Used for standalone mode
+    jobname = 'Frostbyte Studios' -- Used for standalone mode
   },
 
   Settings = {
+    -- 'tablet' | 'oxlib' - Choose UI type
+    ui_type = 'oxlib',
+    
     notifications = {
       -- 'ox' uses ox_lib; or set to 'custom' and implement below
       type = 'ox',
       customFunction = function(message, type, duration, title)
-        -- Your custom notify here
+        print('[CUSTOM NOTIFY] ' .. message)
       end,
     },
   },
@@ -106,9 +114,10 @@ return {
   Options = {
     postalCodes = { enabled = true },    -- Requires mnr_postals
     command     = { enabled = true, command_name = 'minimapm' },
+    keybind     = { enabled = true, default = "F6" },
     anim        = { enabled = true },    -- Tablet animation
     HUDHandle   = {
-      enabled = false,
+      enabled = true,
       onTabletOpen  = function() end,    -- Hide your HUD here
       onTabletClose = function() end,    -- Show your HUD here
     },
@@ -123,39 +132,71 @@ return {
   -- Default alpha (0-255) for all tiles
   DefaultAlpha = 100,
 
-  -- Overlays grouped by category; one style active per category
+  -- Overlay conflicts (prevent similar overlays being active together)
+  OverlayConflicts = {
+    interstates = "interstates2",
+    interstates2 = "interstates",
+    rural = "rural2",
+    rural2 = "rural",
+    urban = "urban2",
+    urban2 = "urban"
+  },
+
+  -- Map overlays grouped by category
   MapCategories = {
     street_names = {
       label = "Zone Names",
+      allowMultiple = false, -- Only one style active at a time
       styles = {
         names = {
-          label = "Standard",
+          label = "Standard Names",
           tiles = {
             { xOffset = 0, yOffset = 0, txd = "minimap_names_tile_0_0", txn = "0_0", alpha = 100 },
+            -- ... more tiles
           }
         },
+        npcyan = { label = "Cyan Modern Names" },
+        npblue = { label = "Blue Modern Names" },
+        -- ... more color variants
       }
     },
 
     postal_codes = {
       label = "Postal Codes",
+      allowMultiple = false,
       styles = {
-        whitepostales = {
-          label = "White Postal Codes",
-          tiles = {
-            { xOffset = 0, yOffset = 0, txd = "minimap_whitepostales_tile_0_0", txn = "0_0", alpha = 100 },
-          }
-        },
+        whitepostales = { label = "White Postal Codes" },
+        blackpostales = { label = "Black Postal Codes" }
       }
     },
+
+    standard_routes = {
+      label = "Standard Routes",
+      allowMultiple = true, -- Multiple styles can be active
+      styles = {
+        interstates = { label = "Interstate Signs" },
+        rural = { label = "Rural Routes" },
+        urban = { label = "Urban Routes" }
+      }
+    },
+
+    san_andreas_routes = {
+      label = "San Andreas Routes",
+      allowMultiple = true,
+      styles = {
+        interstates2 = { label = "SA Interstate Signs" },
+        rural2 = { label = "SA Rural Routes" },
+        urban2 = { label = "SA Urban Routes" }
+      }
+    }
   },
 
-  -- Emergency departments overlays (job-gated if permissions.enabled = true)
+  -- Emergency departments overlays (job-gated if permissions enabled)
   DepartmentZones = {
     enabled = true,
     permissions = {
-      enabled = true,
-      allowedJobs = { 'police', 'sheriff' }, -- sample
+      enabled = false, -- Enable job-based access control
+      allowedJobs = { 'police', 'sheriff', 'trooper' },
     },
     departments = {
       lspd = {
@@ -164,12 +205,16 @@ return {
         shortLabel = 'LSPD',
         tiles = {
           { xOffset = 0, yOffset = -1, txd = "minimap_lspd_1_0", txn = "1_0", alpha = 100 },
+          -- ... more tiles
         }
       },
+      bcso = { enabled = true, label = 'Blaine County Sheriff' },
+      lssd = { enabled = true, label = 'Los Santos Sheriff Department' },
+      -- ... more departments (mcso, rhpd, dppd, saspa, usaf, nose)
     },
   },
 
-  -- Pause menu color customization
+  -- HUD color customization
   HudCustomization = {
     enabled = true,
     colors = {
@@ -190,6 +235,8 @@ return {
         { x = 4859.6, y = -5099.9, txd = "cayoPerico", txn = "cayo_tex", alpha = 100, centered = true },
       }
     },
+    roxwood = { enabled = true, description = "Roxwood County" },
+    cayoBridge1 = { enabled = true, description = "Cayo Bridge V1" },
   },
 }
 ```
