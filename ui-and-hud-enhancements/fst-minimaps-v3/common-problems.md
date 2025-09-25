@@ -14,7 +14,7 @@ coverY: 0
 ***
 
 \
-<img src="../../.gitbook/assets/image (1).png" alt="Crash Example" data-size="original">\
+<img src="../../.gitbook/assets/image (1) (2).png" alt="Crash Example" data-size="original">\
 
 
 ***

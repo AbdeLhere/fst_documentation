@@ -324,3 +324,64 @@ exports.fst_enhanced_minimap:openTablet()
 exports.fst_enhanced_minimap:closeTablet()
 ```
 
+### Creating new overlays
+
+you can absolutely make more zones and even put them in a new category if you want to separate them from the department zones. the script is fully driven by the config, so as long as you follow the same structure, it will recognize your new zones.
+
+each category, like `street_names`, `postal_codes`, or `standard_routes`, is just a container for one or more styles or zones. you can create your own, for example a “city zones” category.
+
+inside a category, each style or zone has a few key things:
+
+* **label** – the name displayed in-game
+* **description** – a short explanation
+* **tiles** – the minimap overlays that make up the zone. each tile points to a `txd`/`txn` name from a **ytd file** that you will need to create
+* optional: **icon**, **color**, **allowMultiple**
+
+**example**:
+
+```lua
+city_zones = {
+  label = "city zones",
+  description = "custom city overlays like parks and city limits",
+  icon = "fa-solid fa-city",
+  color = "#3b82f6",
+  allowMultiple = true,
+  styles = {
+    parks = {
+      label = "city parks",
+      description = "all park areas",
+      tiles = {
+        { xOffset = 0, yOffset = 0,  txd = "minimap_parks_0_0", txn = "0_0", alpha = 100 },
+        { xOffset = 1, yOffset = 0,  txd = "minimap_parks_0_1", txn = "0_1", alpha = 100 },
+        { xOffset = 0, yOffset = -1, txd = "minimap_parks_1_0", txn = "1_0", alpha = 100 },
+        { xOffset = 1, yOffset = -1, txd = "minimap_parks_1_1", txn = "1_1", alpha = 100 }
+      }
+    },
+    city_limits = {
+      label = "city limits",
+      description = "outline of city boundaries",
+      tiles = {
+        { xOffset = 0, yOffset = 0,  txd = "minimap_citylimits_0_0", txn = "0_0", alpha = 100 },
+        { xOffset = 1, yOffset = 0,  txd = "minimap_citylimits_0_1", txn = "0_1", alpha = 100 }
+      }
+    }
+  }
+}
+
+```
+
+{% hint style="warning" %}
+important, you will need to create the ytd files for each zone, like `minimap_parks_0_0.ytd` or `minimap_citylimits_0_0.ytd`. the config just tells the script which tiles to load, the visuals come from your ytd files.
+{% endhint %}
+
+for the tile positions, you could technically use real world coordinates like `x = 4859.6, y = -5099.9` for a tile, but the easier way is to use **xOffset** and **yOffset**.
+
+in the same way the default tile grid works, this resource places tiles based on offsets. the position of a tile is calculated from an origin point. the designers of gta 5 chose the origin to be the top-left corner of the map. this means that the top-left tile of the default map is at offset `x = 0` and `y = 0`.
+
+the sign of the offset determines the direction in which to place a tile, while the number determines how far (in number of tiles) to place it in that direction. one unit equals one tile, which is 4500 in-game units.
+
+<figure><img src="../.gitbook/assets/fst (2).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+so basically, follow the config structure, create your ytd files, use offsets for positioning, and the script will load your new zones. you can make as many as you want.
+{% endhint %}
