@@ -83,25 +83,20 @@ ensure fst_enhanced_minimap
 
 ### Config
 
-{% code title="config.lua" fullWidth="false" %}
 ```lua
 return {
   debug = false,
-
   Framework = {
     -- 'esx' | 'qb' | 'qbx' | 'standalone'
     type = 'standalone',
   },
-
   Fallbacks = {
     playername = 'hey its me',    -- Used for standalone mode
     jobname = 'Frostbyte Studios' -- Used for standalone mode
   },
-
   Settings = {
     -- 'tablet' | 'oxlib' - Choose UI type
     ui_type = 'oxlib',
-    
     notifications = {
       -- 'ox' uses ox_lib; or set to 'custom' and implement below
       type = 'ox',
@@ -110,8 +105,8 @@ return {
       end,
     },
   },
-
   Options = {
+    forcePlayerSettings = true, -- true = Only load forced overlays, disable player controls
     postalCodes = { enabled = true },    -- Requires mnr_postals
     command     = { enabled = true, command_name = 'minimapm' },
     keybind     = { enabled = true, default = "F6" },
@@ -150,12 +145,16 @@ return {
       styles = {
         names = {
           label = "Standard Names",
+         forced = true, -- This overlay will be forced when forcePlayerSettings = true
           tiles = {
             { xOffset = 0, yOffset = 0, txd = "minimap_names_tile_0_0", txn = "0_0", alpha = 100 },
             -- ... more tiles
           }
         },
-        npcyan = { label = "Cyan Modern Names" },
+        npcyan = { 
+         label = "Cyan Modern Names",   
+         forced = false, -- This overlay will NOT be forced 
+        },
         npblue = { label = "Blue Modern Names" },
         -- ... more color variants
       }
@@ -239,12 +238,10 @@ return {
     cayoBridge1 = { enabled = true, description = "Cayo Bridge V1" },
   },
 }
+
 ```
-{% endcode %}
 
-
-
----
+***
 
 ### **Forced Settings System**
 
