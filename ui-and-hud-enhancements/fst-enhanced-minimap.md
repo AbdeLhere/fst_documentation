@@ -242,6 +242,78 @@ return {
 ```
 {% endcode %}
 
+
+
+---
+
+### **Forced Settings System**
+
+You can enable server-side control of the minimap using the **Forced Settings System**. This prevents players from toggling overlays or department zones and ensures only selected overlays/departments are loaded.
+
+#### **How it works**
+
+Set `Options.forcePlayerSettings = true` in your `config.lua`:
+
+* Players **cannot** toggle overlays or departments.
+* Only overlays or departments with `forced = true` will be loaded.
+* Player preferences are ignored and **not saved**.
+* UI controls are **locked/disabled** for players.
+
+#### **How to use**
+
+1. Open your `config.lua` and set:
+
+```lua
+Options = {
+    forcePlayerSettings = true,
+    -- other options...
+}
+```
+
+2. Find the overlay styles in `MapCategories` and set `forced = true` for the ones you want active:
+
+```lua
+street_names = {
+    styles = {
+        names  = { forced = true },   -- This overlay will show
+        npcyan = { forced = false }   -- This overlay won't show
+    }
+}
+```
+
+3. Find the departments in `DepartmentZones` and set `forced = true` for the ones you want active:
+
+```lua
+departments = {
+    lspd = { forced = true },  -- This department will show
+    bcso = { forced = false }  -- This department won't show
+}
+```
+
+4. Restart the resource. Players will now only see the overlays and departments you selected.
+
+#### **Example**
+
+```lua
+-- MapCategories example
+street_names = {
+    styles = {
+        names  = { forced = true },
+        npcyan = { forced = false }
+    }
+}
+
+-- DepartmentZones example
+departments = {
+    lspd = { forced = true },
+    bcso = { forced = false }
+}
+```
+
+{% hint style="warning" %}
+Once enabled, players **cannot** change overlays or departments manually. Make sure your forced selections are correct before restarting the resource.
+{% endhint %}
+
 ### FAQ
 
 #### <mark style="color:yellow;">I have a custom map like Roxwood. Is it supported?</mark>
