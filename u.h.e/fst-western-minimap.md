@@ -1,3 +1,27 @@
+---
+cover: ../.gitbook/assets/western minimap thumb.jpg
+coverY: 471.1153163808398
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # fst-western-minimap
 
 FST Western Minimap \
