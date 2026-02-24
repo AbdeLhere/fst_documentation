@@ -77,6 +77,10 @@ Every detail is tuned for clarity, navigation, and roleplay.
 Optional: `ox_lib` (only required if the HUD color picker feature is enabled)
 {% endhint %}
 
+### Config
+
+<figure><img src="../.gitbook/assets/fst_w_config.png" alt=""><figcaption></figcaption></figure>
+
 ## Installation
 
 1. Place the resource folder inside your server resources (for example inside a `[fst]` category).
