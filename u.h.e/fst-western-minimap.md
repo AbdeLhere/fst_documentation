@@ -28,6 +28,8 @@ FST Western Minimap \
 \
 Forged in Sun. Crowned in Dust. ﻿ Golden Suelo is not just a recolor. It’s a fully standalone and customizable FiveM minimap designed to give your server complete visual control. ﻿ The base design keeps the original GTA layout while transforming the entire island into a warm western desert style with balanced tones, clean roads, and strong readability. What makes it different? You control everything. ﻿ A clean, new design with full customization power.
 
+{% embed url="https://youtu.be/N0WWFBoAL48" %}
+
 ### **Features**
 
 This is not a static texture pack.
