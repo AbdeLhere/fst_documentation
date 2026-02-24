@@ -1,20 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
----
-
 # fst-enhanced-minimap
 
 The **FST Enhanced Minimap** is not just a minimap, it's a fully customizable and interactive map management system designed to enhance the player experience on your FiveM server. With a sleek tablet UI, players can manage their minimap overlays, customize their pause menu, and interact with advanced features like postal systems, special maps, and emergency zones. This script is perfect for roleplay servers looking to add a professional and immersive touch to their gameplay.
