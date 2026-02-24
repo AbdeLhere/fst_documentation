@@ -77,7 +77,7 @@ Every detail is tuned for clarity, navigation, and roleplay.
 Optional: `ox_lib` (only required if the HUD color picker feature is enabled)
 {% endhint %}
 
-### Config
+## Config
 
 <figure><img src="../.gitbook/assets/fst_w_config.png" alt=""><figcaption></figcaption></figure>
 
