@@ -11,6 +11,7 @@
 ## UI & HUD Enhancements <a href="#u.h.e" id="u.h.e"></a>
 
 * [fst-enhanced-minimap](u.h.e/fst-enhanced-minimap.md)
+* [Enhanced Minimap V2](u.h.e/enhanced-minimap-v2.md)
 * [fst-western-minimap](u.h.e/fst-western-minimap.md)
 * [fst-pause-menu](u.h.e/fst-pause-menu/README.md)
   * [QB Readme](u.h.e/fst-pause-menu/qb-readme.md)
