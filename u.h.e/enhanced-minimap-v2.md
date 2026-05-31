@@ -582,3 +582,347 @@ OverlayConflictGroups = {
 - Overlay keys must match entries in the `overlays` table
 - Groups work across different categories
 - No need to list every pair — just group all conflicting overlays together
+
+# Categories & Overlays System
+
+The minimap uses a **category-based overlay system**. Categories organize overlays into logical groups in the tablet UI, and overlays are the actual map tiles that get rendered.
+
+## How It Works
+
+- **Categories** = Sections in the tablet UI (e.g., "Department Zones", "Postal Codes", "Map Themes")
+- **Overlays** = Individual map tiles inside those sections (e.g., "LSPD", "Dark Postals", "Blue Ocean Theme")
+- Each overlay belongs to one category via the `categorie` field
+- Categories can have subcategories (nested tabs in the UI)
+
+## Category Configuration
+
+Each category supports these properties:
+
+```lua
+category_name = {
+  enabled = true,              -- false = hide entire category from UI
+  label = "Display Name",      -- What shows in the tablet
+  description = "Details",     -- Subtitle/description text
+  icon = "fa-solid fa-icon",   -- FontAwesome icon
+  allowMultiple = false,       -- true = players can enable multiple overlays in this category
+  
+  -- Optional properties:
+  subCategorie = true,         -- Renders as a sub-tab inside parentCategory
+  parentCategory = 'parent',   -- Which category to nest inside
+  requiresMap = 'cayo_perico', -- Category hidden when this customMaps entry is disabled
+  conflictsWithMaps = { "cayo_perico" }, -- Disable when these custom maps are active
+  
+  permissions = {              -- Restrict to specific jobs (bypassed in standalone mode)
+    enabled = true,
+    allowedJobs = { 'police', 'sheriff' }
+  }
+}
+```
+
+### enabled
+- `true` = Category appears in the tablet
+- `false` = Category completely hidden (all overlays inside it are disabled)
+
+### allowMultiple
+- `true` = Players can enable multiple overlays in this category at once
+- `false` = Only one overlay can be active at a time (radio button behavior)
+
+### Job Permissions
+
+Restrict a category to specific jobs (ESX, QBCore, QBox):
+
+```lua
+permissions = {
+  enabled = true,
+  allowedJobs = { 'police', 'sheriff', 'trooper' }
+}
+```
+
+- **Standalone mode**: Permissions are bypassed (everyone has access)
+- **Framework mode**: Only players with those jobs see the category
+
+### Subcategories
+
+Nest categories inside other categories for organization:
+
+```lua
+postal_4d = {
+  enabled = true,
+  label = "4-Digit",
+  subCategorie = true,
+  parentCategory = 'postal_codes', -- Renders inside postal_codes tab
+}
+```
+
+## Overlay Configuration
+
+Each overlay supports these properties:
+
+```lua
+overlay_name = {
+  categorie = 'category_name', -- Which category this overlay belongs to (required)
+  label = "Display Name",      -- What shows in the tablet
+  description = "Details",     -- Subtitle/description text
+  enabled = true,              -- false = overlay won't load or appear
+  forced = false,              -- true = always active on connect, can't be toggled off
+  
+  -- Optional properties:
+  linkedOverlay = "other_overlay", -- Auto-enable/disable another overlay with this one
+  icon = "nui://path/icon.png",    -- Custom icon (used for department zones)
+  shortLabel = "ABBR",             -- Short abbreviation (used for department zones)
+}
+```
+
+### enabled
+- `true` = Overlay is available (players can toggle it)
+- `false` = Overlay completely disabled (won't load or appear for anyone)
+
+### forced
+- `true` = Overlay is always active when player joins, cannot be toggled off
+- `false` = Overlay is optional (player controls)
+
+### linkedOverlay
+
+Automatically sync two overlays together:
+
+```lua
+black_hole = {
+  categorie = 'map_themes',
+  linkedOverlay = "black_hole_cayo", -- When main theme enables, Cayo theme also enables
+}
+```
+
+- When `black_hole` is enabled, `black_hole_cayo` also enables
+- When `black_hole` is disabled, `black_hole_cayo` also disables
+- Useful for matching themes across base map and custom maps
+
+---
+
+## Available Categories
+
+### Department Zones
+```lua
+departments = {
+  enabled = true,
+  label = "Department Zones",
+  allowMultiple = true,
+  permissions = {
+    enabled = true,
+    allowedJobs = { 'police', 'sheriff', 'trooper' }
+  }
+}
+```
+Law enforcement territory overlays (LSPD, LSSD, BSCO, etc.). Restricted to police jobs by default.
+
+### Zone Names
+```lua
+zone_names = {
+  enabled = true,
+  label = "Zone Names",
+  allowMultiple = false,
+}
+```
+Location name overlays (Vinewood, Del Perro, Sandy Shores, etc.). Different themed styles available.
+
+### Street Names
+```lua
+street_names = {
+  enabled = true,
+  label = "Street Names",
+  allowMultiple = false,
+}
+```
+Street name text overlay.
+
+### Postal Codes (Parent Category)
+```lua
+postal_codes = {
+  enabled = true,
+  label = "Postal Codes",
+  allowMultiple = false,
+}
+```
+Parent category for postal code subcategories.
+
+**Subcategories:**
+- **postal_4d** - 4-digit postal codes (dark/light variants)
+- **postal_ocrp** - OCRP postal codes (dark/light variants)
+
+### Numbered Highways (Parent Category)
+```lua
+routes = {
+  enabled = true,
+  label = "Numbered Highways",
+  allowMultiple = true,
+}
+```
+Parent category for route sign subcategories (interstates, rural, urban).
+
+**Subcategories:**
+- **standard_routes** - Classic US-style route signs
+- **san_andreas_routes** - San Andreas themed route signs
+- **medieval_routes** - Medieval themed route signs
+- **nostalgic_routes** - Retro game themed route signs
+- **underwater_routes** - Underwater themed route signs
+
+### POI Icons
+```lua
+poi_icons = {
+  enabled = true,
+  label = "POI Icons",
+  allowMultiple = false,
+}
+```
+Point-of-interest icon themes (Medieval, Nostalgic, Underwater).
+
+### Map Themes
+```lua
+map_themes = {
+  enabled = true,
+  label = "Map Themes",
+  allowMultiple = false,
+}
+```
+Base-map color themes (Black Hole, Blue Ocean, Sakura, etc.).
+
+### Cayo Perico Themes (Subcategory)
+```lua
+cayo_themes = {
+  enabled = true,
+  requiresMap = 'cayo_perico',
+  subCategorie = true,
+  parentCategory = 'map_themes',
+  conflictsWithMaps = { "cayo_perico" },
+}
+```
+Cayo Perico color theme extensions. Hidden when `customMaps.cayo_perico.enabled = false`.
+
+---
+
+## Available Overlays
+
+### Zone Names Overlays
+- **names** - Standard zone names
+- **wanted_names** - Wanted/red theme styling
+- **cyber_red_names** - Cyber red theme styling
+- **crime_scene_names** - Crime scene theme styling
+- **epicnews** - EpicNews styled theme
+- **pure_blue** - Pure blue styled theme
+
+### Street Names Overlay
+- **street_names_overlay** - Standard street names
+
+### Postal Code Overlays
+
+**4-Digit:**
+- **p4d_dark** - Dark (black) background
+- **p4d_light** - Light (white) background
+
+**OCRP:**
+- **pocrp_dark** - Dark (black) background
+- **pocrp_light** - Light (white) background
+
+### Route Sign Overlays
+
+Each route category has three overlays: **Interstates**, **Rural Routes**, **Urban Routes**
+
+**Standard Routes:**
+- **interstates** - US-style interstate highway signs
+- **rural** - US-style rural route signs
+- **urban** - US-style urban state route signs
+
+**San Andreas Routes:**
+- **interstates2**, **rural2**, **urban2**
+
+**Medieval Routes:**
+- **interstates_medieval**, **rural_medieval**, **urban_medieval**
+
+**Nostalgic Routes:**
+- **interstates_nostalgic**, **rural_nostalgic**, **urban_nostalgic**
+
+**Underwater Routes:**
+- **interstates_underwater**, **rural_underwater**, **urban_underwater**
+
+### Map Theme Overlays
+- **black_hole** - Deep dark void map theme
+- **blue_ocean** - Cool ocean-blue map theme
+- **dusty_brown** - Warm dusty desert theme
+- **fresh_blood** - Deep crimson map theme
+- **mandarin** - Warm amber/orange map theme
+- **pink_petal** - Soft pink blossom map theme
+- **purple_heart** - Deep violet map theme
+- **sakura** - Soft cherry blossom theme
+- **sour_lime** - Bright fresh lime map theme
+
+**Cayo Perico Extensions** (one for each main theme):
+- **black_hole_cayo**, **blue_ocean_cayo**, **dusty_brown_cayo**, etc.
+
+### POI Icon Overlays
+- **poi_medival** - Medieval themed icons
+- **poi_nostalgic** - Retro game themed icons
+- **poi_underwater** - Underwater themed icons
+
+### Department Zone Overlays
+- **bsco** - Blaine County Sheriff
+- **dppd** - Del Perro Police Department
+- **lspd** - Los Santos Police Department
+- **lssd** - Los Santos Sheriff Department
+- **mcso** - Majestic County Sheriff Office
+- **nose** - National Office of Security Enforcement
+- **rhpd** - Rockford Hills Police Department
+- **saspa** - San Andreas State Prison Authority
+- **usaf** - United States Air Force Security Forces
+
+---
+
+## Examples
+
+**Disable an entire category:**
+```lua
+categories = {
+  poi_icons = {
+    enabled = false, -- POI icons won't appear in the tablet
+  }
+}
+```
+
+**Disable a specific overlay:**
+```lua
+overlays = {
+  wanted_names = {
+    enabled = false, -- Wanted zone names won't load
+  }
+}
+```
+
+**Force an overlay to always be active:**
+```lua
+overlays = {
+  names = {
+    forced = true, -- Standard zone names always active, can't be toggled off
+  }
+}
+```
+
+**Remove job restrictions from department zones:**
+```lua
+categories = {
+  departments = {
+    permissions = {
+      enabled = false, -- Everyone can access department zones
+    }
+  }
+}
+```
+
+**Add a new job to department zone permissions:**
+```lua
+categories = {
+  departments = {
+    permissions = {
+      enabled = true,
+      allowedJobs = { 'police', 'sheriff', 'trooper', 'ems', 'fire' }
+    }
+  }
+}
+```
