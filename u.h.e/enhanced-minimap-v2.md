@@ -126,3 +126,137 @@ InGamePermissionsSystem = {
   identifiers = { 'discord:123456789' },
 }
 ```
+
+# Player Settings & Controls
+
+## Player Display Preferences
+
+Controls what features players can access from the tablet and whether their choices are saved.
+
+```lua
+playerSettings = {
+  allowOverlayControl   = true, -- Let players toggle overlays (postal codes, routes, zones)
+  allowWeatherControl   = true, -- Let players toggle weather tiles/icons
+  allowDayNightControl  = true, -- Let players toggle day/night icon and map theme
+  allowTileAlphaControl = true, -- Let players adjust overlay opacity sliders
+  allowMapThemeControl  = true, -- Let players choose base map color themes
+  allowLinkedOverlays   = true, -- Let players toggle linked-overlay auto-sync
+  allowDatasetControl   = true, -- Let players switch postal code types
+  allowPauseMenuControl = true, -- Let players change pause menu background
+  savePlayerPrefs       = true, -- Save player preferences (KVP storage)
+}
+```
+
+**Each setting:**
+- `true` = Feature is available in the tablet for players to use
+- `false` = Feature is hidden/disabled for players
+
+**savePlayerPrefs:**
+- `true` = Player choices are saved and restored on reconnect
+- `false` = All player settings reset every time they join the server
+
+**Note:** When `InGamePermissionsSystem.forceOverlays = true`, overlays are locked even if `allowOverlayControl = true`. The force flag takes priority.
+
+---
+
+## Postal Code System
+
+```lua
+postalCodes = {
+  enabled = true,   -- Enable/disable the entire postal code system
+  dataset = 'ocrp', -- Which postal code set to use
+}
+```
+
+**enabled:**
+- `true` = Postal code system works (players can toggle postal overlays in the tablet)
+- `false` = Postal code system is completely disabled (no postal options appear in-game)
+
+**dataset options:**
+- `'fourdigits'` = Standard 4-digit postal codes (~1687 codes)
+- `'ocrp'` = OCRP postal codes
+- `'oulsen'` = Oulsen postal codes
+
+---
+
+## Opening the Tablet
+
+### Command
+
+```lua
+command = {
+  enabled = true,
+  command_name = 'minimapm',
+}
+```
+
+- `enabled = true` → Players can type `/minimapm` (or your custom name) to open the tablet
+- `enabled = false` → Command is disabled (only keybind works)
+- `command_name` → Change the command (e.g., `'map'` makes it `/map`)
+
+### Keybind
+
+```lua
+keybind = {
+  enabled = true,
+  default = "F6",
+}
+```
+
+- `enabled = true` → Players can press the key to open the tablet
+- `enabled = false` → Keybind is disabled (only command works)
+- `default` → Default key (players can change it in FiveM settings)
+
+---
+
+## Tablet Animation
+
+```lua
+tablet_anim = true,
+```
+
+- `true` = Player pulls out a tablet with animation
+- `false` = No animation, tablet opens instantly
+
+---
+
+## Custom HUD Integration
+
+Use this if you have a custom HUD resource that needs to hide when the tablet opens.
+
+```lua
+HUDHandle = {
+  enabled = false,
+  onTabletOpen = function()
+    -- Add code to hide your HUD here
+    -- Example: exports['my_hud']:Hide()
+  end,
+  onTabletClose = function()
+    -- Add code to show your HUD here
+    -- Example: exports['my_hud']:Show()
+  end
+}
+```
+
+**enabled:**
+- `true` = Your custom functions run when tablet opens/closes
+- `false` = No custom HUD handling (default GTA HUD behavior)
+
+---
+
+## Sound Settings
+
+```lua
+sounds = {
+  volume = 0.5,     -- Sound volume (0.0 = silent, 1.0 = full volume)
+  map_sound = true, -- Play sounds when opening/closing the tablet
+}
+```
+
+**volume:**
+- Range: `0.0` to `1.0`
+- `0.5` = 50% volume (recommended)
+
+**map_sound:**
+- `true` = Sounds enabled
+- `false` = Sounds disabled (silent)
