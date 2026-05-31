@@ -2,7 +2,17 @@
 
 ## How It Works
 
-The admin permissions system controls who can make server-wide changes to the minimap. When enabled, only authorized admins can modify overlays, HUD colors, and display settings for all players. Regular players see their tablet in read-only mode.
+The admin permissions system controls who can make server-wide changes to the minimap. 
+
+**When enabled with force flags:**
+- Authorized admins see an **"Admin Mode" button** in the tablet to control server-wide settings
+- Their changes apply to ALL players on the server
+- Regular players see their tablet in read-only mode (they can view but not change locked features)
+
+**When disabled:**
+- No Admin Mode button appears
+- Everyone controls their own minimap settings independently
+- Changes only affect the individual player
 
 ## Configuration
 
@@ -35,12 +45,16 @@ InGamePermissionsSystem = {
 - `false` = No restrictions. Everyone controls their own minimap settings independently.
 
 ### Force Flags
-When you set a force flag to `true`, that feature becomes locked for regular players:
+When you set a force flag to `true`:
+1. That feature becomes **locked for regular players** (read-only)
+2. Authorized admins get an **"Admin Mode" button** in their tablet
+3. Admins use the Admin Mode menu to control that feature **server-wide** (changes apply to everyone)
+
 - **forceOverlays** - Controls all map overlays (postal codes, routes, department zones, map themes)
 - **forceVisuals** - Controls HUD colors (minimap border, waypoint color, pause menu background)
 - **forceDisplaySettings** - Controls weather and day/night display options
 
-If all three are `false`, no Admin Mode button appears in the tablet (nothing is being managed server-wide).
+**Important:** If all three force flags are `false`, no Admin Mode button will appear (nothing is being managed server-wide).
 
 ### Granting Admin Access
 
