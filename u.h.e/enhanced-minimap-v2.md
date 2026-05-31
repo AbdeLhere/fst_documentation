@@ -379,3 +379,206 @@ dayNightSystem = {
 }
 ```
 
+
+# Weather System
+
+Automatically displays weather overlays and icons based on the current in-game weather.
+
+```lua
+weatherSystem = {
+  enabled = {
+    tiles = true, -- Show full-map weather overlays (clouds/rain/snow)
+    icons = true, -- Show weather logo icons on the minimap
+  },
+  
+  weathers = {
+    CLEAR      = { enabled = true, tile = "CLEAR", icon = "CLEAR_LOGO", label = "Clear" },
+    RAIN       = { enabled = true, tile = "RAIN", icon = "RAIN_LOGO", label = "Rain" },
+    THUNDER    = { enabled = true, tile = "THUNDER", icon = "THUNDER_LOGO", label = "Thunderstorm" },
+    SNOW       = { enabled = true, tile = "SNOW", icon = "SNOW_LOGO", label = "Snow" },
+    -- ... more weather types
+  }
+}
+```
+
+## How It Works
+
+- The script detects the current in-game weather (CLEAR, RAIN, THUNDER, SNOW, etc.)
+- It loads the matching tile overlay and/or icon from the `weathers` table
+- Both tiles and icons update automatically when weather changes
+
+## enabled
+
+**tiles:**
+- `true` = Full-map weather overlays appear (clouds, rain, snow covering the map)
+- `false` = No weather tile overlays
+
+**icons:**
+- `true` = Weather logo icons appear on the minimap
+- `false` = No weather icons
+
+**Important:** If **both** `tiles` and `icons` are `false`, the entire weather system is disabled in-game (no weather options appear).
+
+## Weather Definitions
+
+Each weather type has four properties:
+
+**enabled:**
+- `true` = This weather type is active (shows tile/icon when detected)
+- `false` = This weather type is disabled (no overlay when detected)
+
+**tile:**
+- Overlay key for the full-map weather overlay
+- Must match an overlay key in `cl_overlays.lua`
+- Example: `"RAIN"` shows rain clouds across the map
+
+**icon:**
+- Overlay key for the weather logo icon
+- Must match an overlay key in `cl_overlays.lua`
+- Example: `"RAIN_LOGO"` shows a rain icon on the minimap
+
+**label:**
+- Display name shown in the tablet UI
+- Can be any text you want
+
+## Available Weather Types
+
+The script supports these GTA weather types:
+
+- **CLEAR** - Clear skies
+- **EXTRASUNNY** - Extra sunny day
+- **RAIN** - Rainy weather
+- **DRIZZLE** - Light drizzle (uses RAIN tile/icon)
+- **THUNDER** - Thunderstorm with lightning
+- **CLOUDS** - Cloudy skies
+- **OVERCAST** - Overcast gray skies
+- **FOGGY** - Foggy conditions
+- **SNOWLIGHT** - Light snow
+- **BLIZZARD** - Heavy blizzard
+- **SNOW** - Snow
+- **XMAS** - Christmas snow
+- **CLEARING** - Clearing skies
+- **NEUTRAL** - Neutral weather
+- **SMOG** - Smoggy conditions
+- **HALLOWEEN** - Halloween themed weather
+- **HALLOWEEN_RAIN** - Halloween rain
+- **HALLOWEEN_SNOW** - Halloween snow
+
+## Examples
+
+**Disable weather system entirely:**
+```lua
+weatherSystem = {
+  enabled = {
+    tiles = false,
+    icons = false,
+  },
+}
+```
+
+**Icons only, no tile overlays:**
+```lua
+weatherSystem = {
+  enabled = {
+    tiles = false,
+    icons = true,
+  },
+}
+```
+
+**Tiles only, no icons:**
+```lua
+weatherSystem = {
+  enabled = {
+    tiles = true,
+    icons = false,
+  },
+}
+```
+
+**Disable specific weather types:**
+```lua
+weatherSystem = {
+  enabled = {
+    tiles = true,
+    icons = true,
+  },
+  weathers = {
+    CLEAR = { enabled = true, tile = "CLEAR", icon = "CLEAR_LOGO", label = "Clear" },
+    RAIN = { enabled = false }, -- Rain won't show any overlay
+    SNOW = { enabled = true, tile = "SNOW", icon = "SNOW_LOGO", label = "Snow" },
+  }
+}
+```
+
+---
+
+# Overlay Conflict Groups
+
+Prevents multiple overlays from occupying the same map space at the same time.
+
+```lua
+OverlayConflictGroups = {
+  { "interstates", "interstates2", "interstates_medieval", "interstates_nostalgic", "interstates_underwater" },
+  { "rural", "rural2", "rural_medieval", "rural_nostalgic", "rural_underwater" },
+  { "urban", "urban2", "urban_medieval", "urban_nostalgic", "urban_underwater" },
+  { "p4d_dark", "p4d_light", "pocrp_dark", "pocrp_light" },
+}
+```
+
+## How It Works
+
+- Each array is a **conflict group**
+- When one overlay in a group is enabled, all others in that group are automatically disabled
+- This prevents visual overlap (e.g., you can't have both Standard and Medieval interstate signs active)
+
+## Why This Exists
+
+Some overlays cover the same map tiles but with different styles:
+- **Route signs** - Same highways, different themes (Standard, San Andreas, Medieval, Nostalgic, Underwater)
+- **Postal codes** - Same locations, different backgrounds (dark vs light, 4-digit vs OCRP)
+
+Without conflict groups, enabling multiple overlays would stack them on top of each other, making the map unreadable.
+
+## Default Conflict Groups
+
+**Highway Signs:**
+```lua
+{ "interstates", "interstates2", "interstates_medieval", "interstates_nostalgic", "interstates_underwater" }
+```
+Only one interstate style can be active at a time.
+
+**Rural Route Signs:**
+```lua
+{ "rural", "rural2", "rural_medieval", "rural_nostalgic", "rural_underwater" }
+```
+Only one rural route style can be active at a time.
+
+**Urban Route Signs:**
+```lua
+{ "urban", "urban2", "urban_medieval", "urban_nostalgic", "urban_underwater" }
+```
+Only one urban route style can be active at a time.
+
+**Postal Codes:**
+```lua
+{ "p4d_dark", "p4d_light", "pocrp_dark", "pocrp_light" }
+```
+Only one postal overlay can be active (across all types and styles).
+
+## Adding Custom Conflict Groups
+
+If you add custom overlays that occupy the same map space, add them to a conflict group:
+
+```lua
+OverlayConflictGroups = {
+  -- ... existing groups
+  { "my_custom_overlay1", "my_custom_overlay2", "my_custom_overlay3" },
+}
+```
+
+**Rules:**
+- Each group is a Lua array (table) of overlay keys
+- Overlay keys must match entries in the `overlays` table
+- Groups work across different categories
+- No need to list every pair — just group all conflicting overlays together
