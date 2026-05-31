@@ -44,17 +44,24 @@ InGamePermissionsSystem = {
 - `true` = Admin system is active. Only authorized players can make changes that affect everyone.
 - `false` = No restrictions. Everyone controls their own minimap settings independently.
 
+**Important:** If `enabled = true` but **all force flags are `false`**, the system loads only the default settings from config.lua. No Admin Mode button appears and there's no server-wide control - players get the defaults you set in the config.
+
 ### Force Flags
 When you set a force flag to `true`:
 1. That feature becomes **locked for regular players** (read-only)
 2. Authorized admins get an **"Admin Mode" button** in their tablet
 3. Admins use the Admin Mode menu to control that feature **server-wide** (changes apply to everyone)
 
+When force flags are `false`:
+- Players can customize those features freely (not locked)
+- Changes only affect their own view
+
+**Force flag options:**
 - **forceOverlays** - Controls all map overlays (postal codes, routes, department zones, map themes)
 - **forceVisuals** - Controls HUD colors (minimap border, waypoint color, pause menu background)
 - **forceDisplaySettings** - Controls weather and day/night display options
 
-**Important:** If all three force flags are `false`, no Admin Mode button will appear (nothing is being managed server-wide).
+**Note:** If `enabled = true` but all force flags are `false`, everyone uses the default config settings with no admin control.
 
 ### Granting Admin Access
 
