@@ -260,3 +260,122 @@ sounds = {
 **map_sound:**
 - `true` = Sounds enabled
 - `false` = Sounds disabled (silent)
+
+# Day / Night System
+
+Automatically switches map icons and themes based on the in-game time.
+
+```lua
+dayNightSystem = {
+  enabled    = true, -- Enable/disable the entire day/night system
+  dayStart   = 6,    -- Hour when day begins (0-23)
+  nightStart = 21,   -- Hour when night begins (0-23)
+  
+  day = { 
+    tile = "DAY_ICON",      -- Icon overlay to show during day
+    label = "Day",          -- Display label
+    mapTheme = nil          -- Optional: map theme overlay for daytime
+  },
+  
+  night = { 
+    tile = "NIGHT_ICON",    -- Icon overlay to show at night
+    label = "Night",        -- Display label
+    mapTheme = "NIGHT_MAP"  -- Optional: map theme overlay for nighttime
+  },
+  
+  -- Per custom-map day/night theme overrides
+  customMapThemes = {
+    cayo_perico = { day = nil, night = "NIGHT_CAYO" },
+    -- roxwood = { day = nil, night = nil },
+  },
+}
+```
+
+## How It Works
+
+- At `dayStart` hour (default 6 AM), the system switches to day mode
+- At `nightStart` hour (default 9 PM), the system switches to night mode
+- The configured icon and map theme (if set) automatically load based on time
+
+## enabled
+
+- `true` = Day/night system is active (icon and theme switch with time)
+- `false` = System is completely disabled (no day/night options appear in-game)
+
+## Time Settings
+
+**dayStart:**
+- Hour (0-23) when daytime begins
+- Default: `6` (6:00 AM)
+- Example: `5` = starts at 5:00 AM
+
+**nightStart:**
+- Hour (0-23) when nighttime begins
+- Default: `21` (9:00 PM)
+- Example: `19` = starts at 7:00 PM
+
+## Day / Night Configuration
+
+Each phase (day/night) has three properties:
+
+**tile:**
+- Icon overlay key that appears on the minimap
+- Must match an overlay key in `cl_overlays.lua`
+- Example: `"DAY_ICON"` shows a sun icon
+
+**label:**
+- Display name shown in the tablet UI
+- Can be any text you want
+
+**mapTheme:**
+- Optional full-map color theme that loads with this phase
+- Set to an overlay key (like `"NIGHT_MAP"`) or `nil` to disable
+- When set, the entire map changes color during this phase
+
+## Custom Map Themes
+
+Override day/night themes for specific custom maps (Cayo Perico, Roxwood, etc.)
+
+```lua
+customMapThemes = {
+  cayo_perico = { day = nil, night = "NIGHT_CAYO" },
+}
+```
+
+- **Key** must match a `customMaps` entry name (e.g., `cayo_perico`)
+- **day/night** values must match overlay keys in `cl_overlays.lua` or `nil`
+- `nil` = no theme override for that phase on this custom map
+
+**Example:**
+- When night begins and player is on Cayo Perico island, `"NIGHT_CAYO"` theme loads
+- When day begins, no special theme loads (`day = nil`)
+
+## Examples
+
+**Disable day/night system entirely:**
+```lua
+dayNightSystem = {
+  enabled = false,
+}
+```
+
+**Day starts at 5 AM, night at 8 PM:**
+```lua
+dayNightSystem = {
+  enabled = true,
+  dayStart = 5,
+  nightStart = 20,
+}
+```
+
+**No map themes, icons only:**
+```lua
+dayNightSystem = {
+  enabled = true,
+  dayStart = 6,
+  nightStart = 21,
+  day = { tile = "DAY_ICON", label = "Day", mapTheme = nil },
+  night = { tile = "NIGHT_ICON", label = "Night", mapTheme = nil },
+}
+```
+
