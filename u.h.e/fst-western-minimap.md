@@ -126,3 +126,63 @@ The minimap supports:
 * Custom overlay load order control
 
 You can stack overlays exactly how you want.
+
+
+## Using with Enhanced Minimap
+
+If you own **fst_enhanced_minimap** and want to use Western overlays with it:
+
+### Setup
+
+1. **Set compatibility mode** in `fst_western_minimap/config.lua`:
+   ```lua
+   Config.using_the_enhanced_minimap = true
+   ```
+
+2. **Ensure both resources** in `server.cfg`:
+   ```cfg
+   ensure fst_enhanced_minimap
+   ensure fst_western_minimap
+   ```
+
+3. **Restart your server**
+
+### What Happens
+
+**Western Minimap will:**
+- ✅ Provide Western-themed overlay textures to Enhanced Minimap
+- ❌ Disable all its own features (zoom, radar, blur, pause menu, commands, tile system)
+- ❌ Not load its own tablet UI or controls
+
+**Enhanced Minimap will:**
+- ✅ Automatically detect Western texture files in the stream folder
+- ✅ Load Western overlays in the tablet UI
+- ✅ Handle all features (admin system, HUD customization, weather, day/night, etc.)
+- ✅ Allow players to toggle Western overlays on/off from the tablet
+
+### Benefits
+
+- **No conflicts** - All duplicate features are disabled automatically
+- **Best of both worlds** - Western aesthetics + Enhanced features
+- **Performance** - Only one script handling UI and controls
+- **Flexibility** - Toggle Western overlays alongside modern overlays
+
+### Console Messages
+
+When enabled, you'll see:
+```
+[FST Western Minimap] Enhanced Minimap mode enabled
+[FST Western Minimap] All features disabled - providing overlay tiles only
+[FST Western Minimap] Use Enhanced Minimap's tablet to toggle Western overlays
+```
+
+---
+
+## Standalone Mode
+
+If you're **not** using Enhanced Minimap, set:
+```lua
+Config.using_the_enhanced_minimap = false
+```
+
+Western Minimap will run with all features enabled independently.
