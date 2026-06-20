@@ -14,6 +14,8 @@ We only collect limited information necessary to provide and improve our service
 
 We do **not** collect sensitive personal data (like passwords, addresses, or payment card details).
 
+---
+
 ### 2. How We Use Information
 
 We use this information to:
@@ -23,13 +25,58 @@ We use this information to:
 * Prevent fraud, abuse, or misuse of our resources.
 * Improve our services and community experience.
 
-### 3. Data Sharing
+---
+
+### 3. Delivery, Testing & Service Conditions
+
+By purchasing our products, you agree to the following conditions:
+
+* A product is considered **delivered** once a functional version has been provided to the client (test version or final build).
+* The client is responsible for testing the product in their own environment (e.g. FiveM server).
+* The developer is not required to install or operate on client servers unless explicitly agreed.
+* Minor bugs, adjustments, or tuning do not mean the product is not delivered.
+* Some deliveries may be provided in a **beta/test version**, which requires client feedback before final completion.
+* The developer is not obligated to perform live server testing unless previously agreed.
+
+---
+
+### 4. Payments & Refund Policy
+
+* We do not sell or rent your data.
+* Payment details are handled securely by **Tebex** and their payment providers.
+* Work will not be considered complete until full payment is received.
+* If a deposit is required, it is **non-refundable once work has started**.
+* Final files or full access may be withheld until full payment is completed.
+* Refunds are not provided for completed or delivered digital services unless required by law.
+
+---
+
+### 5. Communication, Support & Activity
+
+* Support is provided through Discord or designated ticket systems.
+* Tickets may be closed after **7–14 days of inactivity** from the client.
+* Ongoing work may be paused or cancelled if no response is received for an extended period.
+* All communication must remain respectful and professional. Abusive or disrespectful behavior may result in cancellation of services without refund.
+
+---
+
+### 6. Scope of Work
+
+* Only features explicitly agreed upon in the original order are included.
+* Any additional features, changes, or requests may require extra payment and extended delivery time.
+* Visual references or examples shared after agreement do not automatically change the scope.
+
+---
+
+### 7. Data Sharing
 
 * We do not sell or rent your data.
 * Payment details are handled securely by **Tebex** and their payment providers.
 * We may share data if required by law or to enforce our Terms of Service.
 
-### 4. Your Rights
+---
+
+### 8. Your Rights
 
 You can request to:
 
@@ -37,7 +84,9 @@ You can request to:
 * Leave our Discord at any time.
 * Remove your GitHub contributions by editing/deleting them directly on GitHub.
 
-### 5. Contact
+---
+
+### 9. Contact
 
 For questions about this Privacy Policy, contact us:
 
