@@ -1,8 +1,11 @@
+
 # Privacy Policy
 
 **Effective Date:** August 23, 2025
 
 FrostByte Studios (“we”, “our”, “us”) respects your privacy. This Privacy Policy explains how we handle information when you use our services, including our Tebex store, GitHub projects, and Discord community.
+
+---
 
 ### 1. Information We Collect
 
@@ -27,16 +30,23 @@ We use this information to:
 
 ---
 
-### 3. Delivery, Testing & Service Conditions
+### 3. Delivery, Testing & Service Conditions (Minimap/Script/... Commissions)
 
-By purchasing our products, you agree to the following conditions:
+By purchasing our services, you agree to the following conditions:
 
-* A product is considered **delivered** once a functional version has been provided to the client (test version or final build).
-* The client is responsible for testing the product in their own environment (e.g. FiveM server).
-* The developer is not required to install or operate on client servers unless explicitly agreed.
-* Minor bugs, adjustments, or tuning do not mean the product is not delivered.
-* Some deliveries may be provided in a **beta/test version**, which requires client feedback before final completion.
-* The developer is not obligated to perform live server testing unless previously agreed.
+* A product is considered **not fully delivered until the final payment has been received**, unless otherwise agreed. Any work provided before full payment remains part of an ongoing development process and may be incomplete or subject to change.
+
+* The client is responsible for testing the delivered work in their own environment (e.g. FiveM server). The developer is not required to personally install or operate on the client’s server unless explicitly agreed.
+
+* The developer is not obligated to perform live server testing on client infrastructure unless agreed in advance.
+
+* Some deliveries may be provided in a **beta or test version**, which is part of the development process and requires client feedback before final completion.
+
+* If a ticket remains inactive for an extended period, the developer may issue a final reminder. If there is still no response, the ticket may be closed and the project may be cancelled. Reopening may require a new request and continuation is not guaranteed.
+
+* Any features not listed in the original agreement are considered **additional work** and may require extra payment and extended delivery time.
+
+* All communication must remain respectful and professional. Abusive, hostile, or disrespectful behavior may result in cancellation of services without refund.
 
 ---
 
