@@ -35,18 +35,13 @@ We use this information to:
 By purchasing our services, you agree to the following conditions:
 
 * A product is considered **not fully delivered until the final payment has been received**, unless otherwise agreed. Any work provided before full payment remains part of an ongoing development process and may be incomplete or subject to change.
-
 * The client is responsible for testing the delivered work in their own environment (e.g. FiveM server). The developer is not required to personally install or operate on the client’s server unless explicitly agreed.
-
 * The developer is not obligated to perform live server testing on client infrastructure unless agreed in advance.
-
 * Some deliveries may be provided in a **beta or test version**, which is part of the development process and requires client feedback before final completion.
-
 * If a ticket remains inactive for an extended period, the developer may issue a final reminder. If there is still no response, the ticket may be closed and the project may be cancelled. Reopening may require a new request and continuation is not guaranteed.
-
 * Any features not listed in the original agreement are considered **additional work** and may require extra payment and extended delivery time.
-
 * All communication must remain respectful and professional. Abusive, hostile, or disrespectful behavior may result in cancellation of services without refund.
+* If a test version is provided before final payment, it means the client has been granted trusted early access to the product. Any attempt to use known or minor bugs from this test version as a reason to claim the product is incomplete or to dispute delivery may result in cancellation of remaining work and loss of support or refund eligibility.
 
 ---
 
