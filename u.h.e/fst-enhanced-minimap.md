@@ -432,7 +432,7 @@ in the same way the default tile grid works, this resource places tiles based on
 
 the sign of the offset determines the direction in which to place a tile, while the number determines how far (in number of tiles) to place it in that direction. one unit equals one tile, which is 4500 in-game units.
 
-<figure><img src="../.gitbook/assets/fst (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/fst.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 so basically, follow the config structure, create your ytd files, use offsets for positioning, and the script will load your new zones. you can make as many as you want.
