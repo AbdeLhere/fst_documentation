@@ -11,7 +11,7 @@ FST Old Paper Minimap is a fully standalone and customizable FiveM minimap inspi
 
 ### Features
 
-{% embed url="https://youtu.be/GZM661pj64s" %}
+{% embed url="https://youtu.be/5CNZmaIwmqE" %}
 
 ### About
 
