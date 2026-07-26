@@ -60,6 +60,35 @@ To achieve this, simply move `zone_names` **below** `underwater_routes` in the `
 {% endstep %}
 
 {% step %}
+{% code title="config.lua" %}
+```lua
+  category_order = {
+    "map_themes",         -- player base-map colour themes
+    "cayo_themes",        -- Cayo Perico sub-tab (rendered inside map_themes section)
+    "custom_maps",        -- terrain addons (very bottom)
+    "day_night_themes",   -- day/night base map themes (just above terrain)
+    "departments",        -- zone fills
+    "extras",             -- street names, map keys, and special overlays
+    "standard_routes",    -- route signs: Standard US style
+    "san_andreas_routes", -- route signs: San Andreas style
+    "medieval_routes",    -- route signs: Medieval style
+    "nostalgic_routes",   -- route signs: Nostalgic retro style
+    "underwater_routes",  -- route signs: Underwater style
+    "postal_codes",       -- postal numbers (parent)
+    "postal_4d",          -- 4-digit postal subcategory
+    "postal_ocrp",        -- OCRP postal subcategory
+    "poi_icons",          -- POI icon themes
+    "western_extras",     -- western-specific extras subcategory
+    "oldpaper_extras",    -- old paper-specific extras subcategory
+    "day_night",          -- day/night icon (sun / moon)
+    "weather_icons",      -- weather logo icon (very top)
+    "weather_tiles",      -- full-map weather overlays — clouds/rain/snow
+  },
+```
+{% endcode %}
+{% endstep %}
+
+{% step %}
 ### Results
 
 <figure><img src="../../../.gitbook/assets/Nouveau projet.png" alt=""><figcaption></figcaption></figure>
