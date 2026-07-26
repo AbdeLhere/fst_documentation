@@ -15,6 +15,7 @@
   * [Common Problems](u.h.e/enhanced-minimap-v2/common-problems/README.md)
     * [Misalignment with Custom Maps](u.h.e/enhanced-minimap-v2/common-problems/misalignment-with-custom-maps.md)
     * [Adjusting Overlay Priority](u.h.e/enhanced-minimap-v2/common-problems/adjusting-overlay-priority.md)
+    * [Admin System](u.h.e/enhanced-minimap-v2/common-problems/admin-system.md)
 * [fst-oldpaper-minimap](u.h.e/fst-oldpaper-minimap.md)
 * [fst-western-minimap](u.h.e/fst-western-minimap.md)
 * [fst-pause-menu](u.h.e/fst-pause-menu/README.md)
