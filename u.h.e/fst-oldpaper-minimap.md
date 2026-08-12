@@ -9,14 +9,6 @@ Handcrafted. Timeless. Drawn by Hand.
 
 FST Old Paper Minimap is a fully standalone and customizable FiveM minimap inspired by old navigation charts and sketchbooks. The map combines the original GTA layout with a hand-made paper aesthetic created by artist Doha E., giving the world a unique illustrated appearance while keeping roads and navigation clear.
 
-> [**Footnotes** ](#user-content-fn-1)[^1]**⚠️**\
-> \
-> Please note that the preview showcases features such as the **Weather System** and **Department Jurisdictions System**. These features are **not included** in this script, they are part of a separate project, [**Enhanced Minimap V2 (Beta),**](https://abdelemporium.tebex.io/package/7475499) which will be officially released very soon.
->
-> You may also notice that the in-game overlays have been changed. Those overlays are also part of the [**Enhanced Minimap**](https://abdelemporium.tebex.io/package/7475499).
->
-> However, the **Paper Minimap** still includes a [**fully configurable system**](https://abdelemporium-docs.gitbook.io/frostbytestudios/u.h.e/fst-oldpaper-minimap#config), allowing you to enable or disable features as needed, making it a great option if you don’t have the Enhanced Minimap.
-
 {% embed url="https://youtu.be/17IiOScPyaA" %}
 
 ### About
@@ -211,5 +203,3 @@ Config.load_order = {
 }
 
 ```
-
-[^1]: 
