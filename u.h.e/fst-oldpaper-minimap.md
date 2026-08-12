@@ -9,7 +9,7 @@ Handcrafted. Timeless. Drawn by Hand.
 
 FST Old Paper Minimap is a fully standalone and customizable FiveM minimap inspired by old navigation charts and sketchbooks. The map combines the original GTA layout with a hand-made paper aesthetic created by artist Doha E., giving the world a unique illustrated appearance while keeping roads and navigation clear.
 
-{% embed url="https://youtu.be/17IiOScPyaA" %}
+{% embed url="https://youtu.be/5CNZmaIwmqE" %}
 
 ### About
 
