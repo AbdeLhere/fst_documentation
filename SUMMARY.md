@@ -8,6 +8,11 @@
 * [Terms of Service](getting-started/terms-of-service.md)
 * [CFX Escrow System](getting-started/cfx-escrow-system.md)
 
+## Minimap Commissions
+
+* [Overview](minimap-commissions/overview.md)
+* [Pricing](minimap-commissions/pricing.md)
+
 ## UI & HUD Enhancements <a href="#u.h.e" id="u.h.e"></a>
 
 * [fst-enhanced-minimap](u.h.e/fst-enhanced-minimap.md)
