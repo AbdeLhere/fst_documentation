@@ -28,6 +28,8 @@ We do not create third-party map minimaps from scratch unless specifically agree
 
 ***
 
+***
+
 {% columns %}
 {% column %}
 **Is the minimap open source?**
