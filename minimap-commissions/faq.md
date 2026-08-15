@@ -26,6 +26,8 @@ We do not create third-party map minimaps from scratch unless specifically agree
 {% endcolumn %}
 {% endcolumns %}
 
+***
+
 {% columns %}
 {% column %}
 **Is the minimap open source?**
@@ -37,6 +39,8 @@ Yes. The files you receive are accessible and can be edited by you.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
+
+***
 
 {% columns %}
 {% column %}
@@ -50,6 +54,8 @@ No. Unique commissioned designs stay exclusive to the customer.
 {% endcolumn %}
 {% endcolumns %}
 
+***
+
 {% columns %}
 {% column %}
 **Do I get the PSD files?**
@@ -61,6 +67,8 @@ PSD files are available for an additional **60€**.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
+
+***
 
 {% columns %}
 {% column %}
@@ -78,6 +86,8 @@ Large changes or a completely new design are treated as a new commission.
 {% endcolumn %}
 {% endcolumns %}
 
+***
+
 {% columns %}
 {% column %}
 **Can you add Roxwood, Cayo or other maps?**
@@ -89,6 +99,8 @@ Yes, as long as a usable premade minimap is available.
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
+
+***
 
 {% columns %}
 {% column %}
@@ -106,6 +118,8 @@ This allows supported overlays to be enabled or disabled from the config.
 {% endcolumn %}
 {% endcolumns %}
 
+***
+
 {% columns %}
 {% column %}
 **How long does a commission take?**
@@ -118,6 +132,8 @@ Most commissions take around **2–4 days**, depending on the project.
 {% endcolumn %}
 {% endcolumns %}
 
+***
+
 {% columns %}
 {% column %}
 **Can I choose my own colors and style?**
@@ -129,6 +145,8 @@ Yes. The main design can be made around your preferred colors, style and server 
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
+
+***
 
 {% columns %}
 {% column width="50%" %}
