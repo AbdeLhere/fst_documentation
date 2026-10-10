@@ -12,7 +12,7 @@ coverY: 0
 >
 > If you need help or want to chat, you can reach me here:
 >
-> Discord : [https://discord.gg/7VKXnAbNwb](https://discord.gg/7VKXnAbNwb)\
+> Discord : [https://discord.gg/QmYGtz3xTf](https://discord.gg/QmYGtz3xTf)\
 > GitHub: [github.com/AbdeLhere](https://github.com/AbdeLhere)\
 > Discord DMs: `abdel4999`
 >
