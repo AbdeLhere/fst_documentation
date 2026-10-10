@@ -16,7 +16,7 @@
 
 ## UI & HUD Enhancements <a href="#u.h.e" id="u.h.e"></a>
 
-* [fst-minimaps](u.h.e/fst-minimaps.md)
+* [FST Minimaps](u.h.e/fst-minimaps.md)
 * [fst-minimap-postals](u.h.e/fst-minimap-postals.md)
 * [fst-enhanced-minimap-v2](u.h.e/enhanced-minimap-v2/README.md)
   * [Misalignment with Custom Maps](u.h.e/enhanced-minimap-v2/misalignment-with-custom-maps.md)
