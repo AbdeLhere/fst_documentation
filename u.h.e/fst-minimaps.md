@@ -74,6 +74,8 @@ Adjust `config.lua` to your liking and restart the resource.
 {% hint style="warning" %}
 Enable only one postal set. Textures are supplied by [**fst\_minimap\_postals** ](https://github.com/AbdeLhere/fst_minimap_postals)\
 so make sure to install the dependency first before enabling postals
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Postals Textures<br><a href="https://github.com/AbdeLhere/fst_minimap_postals">Download</a></td><td><a href="../.gitbook/assets/postal textures thumbanel free.jpg">postal textures thumbanel free.jpg</a></td></tr></tbody></table>
 {% endhint %}
 {% endstep %}
 
@@ -188,6 +190,20 @@ Config.load_order = {
 
 ```
 {% endcode %}
+{% endstep %}
+
+{% step %}
+### Custom Installation
+
+{% tabs %}
+{% tab title="Bundle Minimap" %}
+{% hint style="warning" %}
+For **Cayo Perico** installation, an asset called `fst_bundle_minimap_cayo` is included. You first need to install it, as it contains all Cayo Perico minimaps. This helps avoid having a large number of unnecessary textures on your server if your not using Cayo Perico.
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
+
 {% endstep %}
 {% endstepper %}
 
