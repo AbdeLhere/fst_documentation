@@ -4,7 +4,8 @@ description: >-
   used for any other minimap you are using. With this, you can choose between
   the 3 most-used postal types across FiveM: OCRP
 cover: ../.gitbook/assets/postal textures thumbanel free.jpg
-coverY: -4.357437759639595
+coverY: -515.4237738455815
+coverHeight: 188
 ---
 
 # fst-minimap-postals

@@ -1,6 +1,7 @@
 ---
 cover: ../.gitbook/assets/bundle map thumbanel.jpg
-coverY: -492.44444444444446
+coverY: -474.0698230511717
+coverHeight: 201
 layout:
   width: default
   cover:
@@ -76,6 +77,25 @@ Enable only one postal set. Textures are supplied by [**fst\_minimap\_postals** 
 so make sure to install the dependency first before enabling postals
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Postals Textures<br><a href="https://github.com/AbdeLhere/fst_minimap_postals">Download</a></td><td><a href="../.gitbook/assets/postal textures thumbanel free.jpg">postal textures thumbanel free.jpg</a></td></tr></tbody></table>
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Street Names
+
+{% code expandable="true" %}
+```lua
+  gray_street_names = { enabled = false, opacity = 100 },
+  black_street_names = { enabled = false, opacity = 100 },
+  white_street_names = { enabled = false, opacity = 100 },
+```
+{% endcode %}
+
+{% hint style="warning" %}
+Enable only one color set. Textures are supplied by [**fst\_streetnames\_minimap**](https://github.com/AbdeLhere/fst_streetnames_minimap)\
+so make sure to install the dependency first before enabling street names
+
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Street Names Textures<br><a href="https://github.com/AbdeLhere/fst_streetnames_minimap">Download</a></td><td><a href="../.gitbook/assets/street names textures thumbanel.jpg">street names textures thumbanel.jpg</a></td></tr></tbody></table>
 {% endhint %}
 {% endstep %}
 
