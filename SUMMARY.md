@@ -18,7 +18,7 @@
 
 * [FST Minimaps](u.h.e/fst-minimaps.md)
 * [FST Street Names Textures](u.h.e/fst-street-names-textures.md)
-* [fst-minimap-postals](u.h.e/fst-minimap-postals.md)
+* [FST Minimap Postals](u.h.e/fst-minimap-postals.md)
 * [fst-enhanced-minimap-v2](u.h.e/enhanced-minimap-v2/README.md)
   * [Misalignment with Custom Maps](u.h.e/enhanced-minimap-v2/misalignment-with-custom-maps.md)
   * [Adjusting Overlay Priority](u.h.e/enhanced-minimap-v2/adjusting-overlay-priority.md)
