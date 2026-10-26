@@ -241,7 +241,7 @@ Config.load_order = {
 {% tabs %}
 {% tab title="Colored Minimap Bundle" %}
 {% hint style="warning" %}
-For **Cayo Perico** installation, an asset called  `fst_colored_minimaps_cayo_assets` is included. You first need to install it, as it contains all Cayo Perico minimaps. This helps avoid having a large number of unnecessary textures on your server if your not using Cayo Perico.
+For **Cayo Perico** installation, an asset called `fst_colored_minimaps_cayo_assets` is included. You first need to install it, as it contains all Cayo Perico minimaps. This helps avoid having a large number of unnecessary textures on your server if your not using Cayo Perico.
 {% endhint %}
 {% endtab %}
 
@@ -254,7 +254,7 @@ For **Cayo Perico** installation, an asset called `fst_vintage_minimaps_cayo_ass
 {% endstep %}
 {% endstepper %}
 
-### Using with Enhanced Minimap
+### Using with Enhanced Minimap V2
 
 {% hint style="warning" %}
 If you own **fst\_enhanced\_minimap\_v2** and want to use one of this minimaps with it, follow this guide

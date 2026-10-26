@@ -1,7 +1,7 @@
 ---
 icon: square-info
 cover: ../../.gitbook/assets/FST Enhanced Minimap V2.jpg
-coverY: 0
+coverY: -523.5256025902386
 layout:
   width: default
   cover:
@@ -23,6 +23,8 @@ layout:
   tags:
     visible: true
   actions:
+    visible: true
+  anchors:
     visible: true
 ---
 
@@ -72,7 +74,7 @@ G --> G2["Repeat for every overlay you want enabled or disabled"]
 {% tabs %}
 {% tab title="Mode" icon="1" %}
 {% hint style="info" %}
-Everyone controls thier own minimap
+Everyone controls their own minimap
 {% endhint %}
 
 ```lua
@@ -83,7 +85,6 @@ Everyone controls thier own minimap
     forceDisplaySettings = false,
     ace = { 'group.admin', 'fst_minimap.admin' },
     identifiers = { 'discord:907923629226983425', 'license:xxxx' },
-    framework = { esx = { 'superadmin', 'admin' }, qbcore = { 'god', 'admin' }, qbox = { 'god', 'admin' } },
   },
 ```
 {% endtab %}
@@ -128,7 +129,7 @@ Locked for everyone, Config only
 {% hint style="info" %}
 ### Admin Permissions
 
-You can define who has access to the admin controls using **ACE permissions**, **specific player identifiers**, or your framework's admin groups.<br>
+You can define who has access to the admin controls using **ACE permissions**, **specific player identifiers.**<br>
 
 ```lua
 ace = {
@@ -139,12 +140,6 @@ ace = {
 identifiers = {
     'discord:xxxx',
     'license:xxxx'
-},
-
-framework = {
-    esx = { 'superadmin', 'admin' },
-    qbcore = { 'god', 'admin' },
-    qbox = { 'god', 'admin' }
 },
 ```
 {% endhint %}

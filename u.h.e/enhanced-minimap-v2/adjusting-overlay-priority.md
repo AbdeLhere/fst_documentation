@@ -1,7 +1,7 @@
 ---
 icon: square-info
 cover: ../../.gitbook/assets/FST Enhanced Minimap V2.jpg
-coverY: -472.65700483091786
+coverY: -523.5256025902386
 layout:
   width: default
   cover:
@@ -23,6 +23,8 @@ layout:
   tags:
     visible: true
   actions:
+    visible: true
+  anchors:
     visible: true
 ---
 
