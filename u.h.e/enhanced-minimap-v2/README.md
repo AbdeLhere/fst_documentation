@@ -130,12 +130,11 @@ If you want to use the built-in themes, you need an empty Los Santos minimap. [f
     Make sure you **do not see errors like these in your server console**:
 
     ```
-    Warning: could not find file .../steam/ytd_files/**/*.ytd
-    Asset .../minimap_loader.ytd uses 64.0 MiB of physical memory.
+    Warning: Asset .../minimap.ytd uses 64.0 MiB of physical memory.
     Oversized assets can and WILL lead to streaming issues.
     ```
 
-    You may also see warnings for assets using <mark style="color:$warning;">**32.0 MiB of physical memory**</mark>.
+    You may also see warnings for assets using <mark style="color:$warning;">**32.0 MiB of physical memory**</mark>, or similar.
 
     For example, the **Satellite minimap is an 8K map**, which is very large for FiveM. If you are experiencing texture loss or missing roads, **do not use the 8K Satellite map** on your server.
 
