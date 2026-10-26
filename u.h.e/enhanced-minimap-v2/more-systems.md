@@ -1,8 +1,8 @@
 ---
 icon: plus-large
-cover: ../../.gitbook/assets/FST Enhanced Minimap V2.jpg
-coverY: -213.6888888888889
-coverHeight: 534
+cover: ../../.gitbook/assets/enhanced v2 miinilao thumb (1).jpg
+coverY: -516.9892473118279
+coverHeight: 248
 layout:
   width: default
   cover:
@@ -24,6 +24,8 @@ layout:
   tags:
     visible: true
   actions:
+    visible: true
+  anchors:
     visible: true
 ---
 
