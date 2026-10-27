@@ -3,15 +3,15 @@ description: >-
   A showcase of selected custom commissions and sketches from our work. Every
   design is shaped by our customers’ requests, ideas, and vision. The more
   detailed your imagination, the better we can bring
-cover: ../.gitbook/assets/bundle map thumbanel.jpg
-coverY: 402.68004082914575
-coverHeight: 363
+cover: ../.gitbook/assets/image (4).png
+coverY: 0
+coverHeight: 700
 layout:
   width: default
   cover:
     visible: true
     size: background
-    mask: none
+    mask: radial
   title:
     visible: true
   description:
