@@ -4,14 +4,14 @@ description: >-
   design is shaped by our customers’ requests, ideas, and vision. The more
   detailed your imagination, the better we can bring
 cover: ../.gitbook/assets/image (4).png
-coverY: 0
-coverHeight: 700
+coverY: -465.286432160804
+coverHeight: 396
 layout:
   width: default
   cover:
     visible: true
-    size: background
-    mask: radial
+    size: full
+    mask: none
   title:
     visible: true
   description:
