@@ -3,13 +3,13 @@ description: >-
   Street textures for Frostbyte minimaps and other minimaps. Choose between
   white, black, or gray street names.
 cover: ../.gitbook/assets/street names textures thumbanel.jpg
-coverY: -483.8641798182687
-coverHeight: 700
+coverY: -512.9411764705882
+coverHeight: 264
 layout:
   width: default
   cover:
     visible: true
-    size: background
+    size: full
     mask: none
   title:
     visible: true

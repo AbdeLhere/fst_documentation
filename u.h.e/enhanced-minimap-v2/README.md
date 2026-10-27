@@ -1,12 +1,12 @@
 ---
 cover: ../../.gitbook/assets/enhanced v2 miinilao thumb (1).jpg
-coverY: -510.4401007315025
-coverHeight: 700
+coverY: -550.8341708542714
+coverHeight: 263
 layout:
   width: default
   cover:
     visible: true
-    size: background
+    size: full
     mask: none
   title:
     visible: false

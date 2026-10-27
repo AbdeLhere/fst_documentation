@@ -1,12 +1,12 @@
 ---
 cover: ../.gitbook/assets/bundle map thumbanel (1).jpg
-coverY: -474.0698230511717
-coverHeight: 700
+coverY: -520
+coverHeight: 255
 layout:
   width: default
   cover:
     visible: true
-    size: background
+    size: full
     mask: none
   title:
     visible: true

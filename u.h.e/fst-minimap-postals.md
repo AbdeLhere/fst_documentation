@@ -5,12 +5,12 @@ description: >-
   the 3 most-used postal types across FiveM: OCRP
 cover: ../.gitbook/assets/postal textures thumbanel free.jpg
 coverY: -515.4237738455815
-coverHeight: 700
+coverHeight: 304
 layout:
   width: default
   cover:
     visible: true
-    size: background
+    size: full
     mask: none
   title:
     visible: true
