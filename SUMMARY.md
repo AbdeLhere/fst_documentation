@@ -13,6 +13,7 @@
 * [Overview](minimap-commissions/overview.md)
 * [Pricing](minimap-commissions/pricing.md)
 * [FAQ](minimap-commissions/faq.md)
+* [Work showcase](minimap-commissions/work-showcase.md)
 
 ## UI & HUD Enhancements <a href="#u.h.e" id="u.h.e"></a>
 

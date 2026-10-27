@@ -28,12 +28,15 @@ layout:
     visible: true
 ---
 
-# fst-enhanced-minimap-v2
+# FST Enhanced Minimap V2
 
 {% embed url="https://youtu.be/TbQgkFTVGUk" %}
 
 {% hint style="warning" %}
-**Check sub pages for more !**
+**Please read carefully to understand the difference between the Basic and Ultimate versions of FST Enhanced Minimap V2.**\
+\
+The **Basic version** includes the built-in system and standard overlays.\
+The **Ultimate version** includes everything in the Basic version, plus all paid listed here: [**FrostByte Minimaps**](../fst-minimaps.md)
 {% endhint %}
 
 {% stepper %}
@@ -48,7 +51,7 @@ layout:
 {% step %}
 ### Optional minimap assets
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 If you want to use the built-in themes, you need an empty Los Santos minimap. [fst\_empty\_los\_santos\_minimap](https://github.com/AbdeLhere/fst_empty_los_santos_minimap) installed
 {% endhint %}
 
