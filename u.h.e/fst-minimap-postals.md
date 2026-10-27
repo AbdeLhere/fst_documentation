@@ -5,10 +5,34 @@ description: >-
   the 3 most-used postal types across FiveM: OCRP
 cover: ../.gitbook/assets/postal textures thumbanel free.jpg
 coverY: -515.4237738455815
-coverHeight: 188
+coverHeight: 700
+layout:
+  width: default
+  cover:
+    visible: true
+    size: background
+    mask: none
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
-# fst-minimap-postals
+# FST Minimap Postals
 
 {% hint style="warning" %}
 Please Read :warning:\

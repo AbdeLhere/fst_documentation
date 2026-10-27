@@ -4,7 +4,31 @@ description: >-
   white, black, or gray street names.
 cover: ../.gitbook/assets/street names textures thumbanel.jpg
 coverY: -483.8641798182687
-coverHeight: 217
+coverHeight: 700
+layout:
+  width: default
+  cover:
+    visible: true
+    size: background
+    mask: none
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
 # FST Street Names Textures
